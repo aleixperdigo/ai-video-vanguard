@@ -488,6 +488,40 @@
       "highlight": "Anuncio viral · emitido en las Finales NBA",
       "description": "Anuncio de Kalshi generado con IA (Google Veo 3), escenas caóticas estilo GTA, emitido durante las Finales de la NBA.",
       "source": "https://www.youtube.com/watch?v=-QMftwmyW-A"
+    },
+    {
+      "id": "worldcup-2026-bluehorizon",
+      "youtubeId": "7RogQiih3M8",
+      "ads": true,
+      "title": "World Cup 2026 — The AI Football Movie",
+      "director": "The Blue Horizon AI",
+      "tool": "",
+      "date": "2026-06-17",
+      "categories": [
+        "Fotorrealismo",
+        "Narrativa",
+        "Movimiento de cámara"
+      ],
+      "highlight": "",
+      "description": "Pieza cinematográfica IA sobre el Mundial 2026. Herramienta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=7RogQiih3M8"
+    },
+    {
+      "id": "koi-games-bluehorizon",
+      "youtubeId": "JWiSiDX4oBE",
+      "scifiFantasy": true,
+      "title": "KOI Games — AI Cinematic Film",
+      "director": "The Blue Horizon AI",
+      "tool": "",
+      "date": "2026-04-03",
+      "categories": [
+        "Fotorrealismo",
+        "Narrativa",
+        "Consistencia de personaje"
+      ],
+      "highlight": "Ibai, elXokas y TheGrefg",
+      "description": "Cinematic IA estilo survival con streamers españoles (Ibai, elXokas, TheGrefg) luchando por sobrevivir. Herramienta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=JWiSiDX4oBE"
     }
   ]
 }
