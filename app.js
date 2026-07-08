@@ -14,6 +14,7 @@
     sortDir: "desc", // desc = más nuevo primero (lo último, arriba)
     hideScifi: true, // por defecto sci-fi / fantasy EXCLUIDO (OUT)
     hideAds: false, // por defecto ads INCLUIDOS (IN)
+    cols: 2, // referencias por fila (1 / 2 / 4)
     filtered: [],
     rendered: 0,
   };
@@ -56,7 +57,6 @@
     buildChips(els.tools, state.tools, "chip chip--tool", state.activeTools);
     bindEvents();
     render();
-    setupInfiniteScroll();
   }
 
   function uniqueTools(videos) {
@@ -125,12 +125,11 @@
       seg.addEventListener("click", (e) => {
         const btn = e.target.closest(".view-seg__btn");
         if (!btn) return;
-        const cols = btn.dataset.cols;
-        els.grid.classList.remove("grid--cols1", "grid--cols2", "grid--cols4");
-        els.grid.classList.add("grid--cols" + cols);
+        state.cols = Number(btn.dataset.cols) || 2;
         seg
           .querySelectorAll(".view-seg__btn")
           .forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
+        render();
       });
     }
 
@@ -188,7 +187,12 @@
       return dir === "asc" ? da.localeCompare(db) : db.localeCompare(da);
     };
 
-    state.filtered = state.videos.filter(matches).sort((a, b) => {
+    let list = state.videos.filter(matches);
+    // El fijado al fondo (pinBottom) siempre va el último, pase lo que pase
+    const pinned = list.filter((v) => v.pinBottom);
+    list = list.filter((v) => !v.pinBottom);
+
+    list.sort((a, b) => {
       if (state.sortMode === "likes") {
         const diff = getLikes(b.id) - getLikes(a.id); // más likes primero
         if (diff !== 0) return diff;
@@ -197,39 +201,68 @@
       return byDate(a, b, state.sortDir);
     });
 
-    els.count.textContent = `${state.filtered.length}/${state.videos.length}`;
-    els.footCount.textContent = `${state.filtered.length} VÍDEOS`;
+    const total = list.length + pinned.length;
+    els.count.textContent = `${total}/${state.videos.length}`;
+    els.footCount.textContent = `${total} VÍDEOS`;
 
     els.grid.innerHTML = "";
-    state.rendered = 0;
 
-    if (!state.filtered.length) {
+    if (!total) {
       els.grid.innerHTML = `<div class="empty">Sin resultados con estos filtros</div>`;
       return;
     }
 
-    appendPage();
-  }
+    const colsClass = "grid--cols" + state.cols;
 
-  function appendPage() {
-    const next = state.filtered.slice(state.rendered, state.rendered + PAGE_SIZE);
-    if (!next.length) return;
-    const frag = document.createDocumentFragment();
-    next.forEach((v) => frag.appendChild(card(v)));
-    els.grid.appendChild(frag);
-    state.rendered += next.length;
-  }
+    // En orden por LIKES no hay secciones por año (el tiempo queda en 2º término)
+    if (state.sortMode === "likes") {
+      const grid = document.createElement("div");
+      grid.className = "year-grid " + colsClass;
+      list.concat(pinned).forEach((v) => grid.appendChild(card(v)));
+      els.grid.appendChild(grid);
+      return;
+    }
 
-  function setupInfiniteScroll() {
-    const sentinel = document.getElementById("sentinel");
-    if (!sentinel || !("IntersectionObserver" in window)) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) appendPage();
-      },
-      { rootMargin: "600px 0px" }
-    );
-    io.observe(sentinel);
+    // Orden por FECHA: agrupar por año con salto de página y fondo por era
+    const yearOf = (v) => (v.date ? String(v.date).slice(0, 4) : "S/F");
+    const eraOf = (year) => {
+      if (year === "S/F") return "nd";
+      const n = Number(year);
+      if (n >= 2026) return "now";
+      if (n === 2025) return "y2025";
+      return "old"; // 2024, 2023 y anteriores
+    };
+
+    const makeSection = (year, extraClass) => {
+      const sect = document.createElement("section");
+      sect.className = "year-sect year-sect--" + eraOf(year) + (extraClass ? " " + extraClass : "");
+      const head = document.createElement("div");
+      head.className = "year-head" + (extraClass ? " year-head--pinned" : "");
+      head.textContent = extraClass ? (year === "S/F" ? "CLÁSICO" : year + " · el clásico") : year === "S/F" ? "SIN FECHA" : year;
+      sect.appendChild(head);
+      const grid = document.createElement("div");
+      grid.className = "year-grid " + colsClass;
+      sect.appendChild(grid);
+      els.grid.appendChild(sect);
+      return grid;
+    };
+
+    let currentYear = null;
+    let currentGrid = null;
+    list.forEach((v) => {
+      const y = yearOf(v);
+      if (y !== currentYear) {
+        currentYear = y;
+        currentGrid = makeSection(y);
+      }
+      currentGrid.appendChild(card(v));
+    });
+
+    // Fijados al fondo, en su propia sección, siempre lo último
+    if (pinned.length) {
+      const grid = makeSection(yearOf(pinned[0]), "year-sect--pinned");
+      pinned.forEach((v) => grid.appendChild(card(v)));
+    }
   }
 
   function card(v) {
@@ -348,7 +381,9 @@
     if (!iso) return "—";
     const [y, m, d] = iso.split("-");
     if (!y) return iso;
-    return `${d || "01"}.${m || "01"}.${y}`;
+    if (!m) return y; // solo año -> "2025"
+    if (!d) return `${m}.${y}`; // año-mes -> "06.2025"
+    return `${d}.${m}.${y}`; // completo -> "05.06.2026"
   }
 
   function escapeHtml(s) {

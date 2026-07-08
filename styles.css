@@ -313,26 +313,53 @@ body {
 .view-seg__btn svg { display: block; }
 
 /* ---------- Grid ---------- */
+/* Contenedor del feed: apila secciones por año (bandas a sangre completa) */
 .grid {
-  padding: var(--pad);
+  padding: 0;
+}
+
+/* Sección de año con fondo por era */
+.year-sect--now { background: transparent; }        /* 2026+ : base, sin gris */
+.year-sect--y2025 { background: #1e1e1e; }           /* 2025 : gris */
+.year-sect--old { background: #2c2c2c; }             /* 2024 / 2023 / anterior : gris más claro */
+.year-sect--nd { background: transparent; }          /* sin fecha */
+.year-sect--pinned { border-top: 2px solid var(--line); }
+
+.year-head {
+  padding: calc(var(--pad) * 1.1) var(--pad) 8px;
+  font-size: clamp(48px, 11vw, 150px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.85;
+  color: var(--ink);
+}
+.year-head--pinned {
+  font-size: clamp(18px, 3.5vw, 34px);
+  letter-spacing: 0.02em;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+
+.year-grid {
+  padding: 8px var(--pad) var(--pad);
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* fallback = 2 por fila */
 }
-.grid.grid--cols1 {
+.year-grid.grid--cols1 {
   grid-template-columns: minmax(0, 920px);
   justify-content: center;
 }
-.grid.grid--cols2 {
+.year-grid.grid--cols2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-content: stretch;
 }
-.grid.grid--cols4 {
+.year-grid.grid--cols4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: stretch;
 }
 @media (max-width: 1100px) {
-  .grid.grid--cols4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .year-grid.grid--cols4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .card {
@@ -597,10 +624,11 @@ body {
 
 @media (max-width: 520px) {
   /* En portrait / móvil siempre 1 por fila, sin importar el modo */
-  .grid,
-  .grid.grid--cols1,
-  .grid.grid--cols2,
-  .grid.grid--cols4 { grid-template-columns: 1fr; justify-content: stretch; }
+  .year-grid,
+  .year-grid.grid--cols1,
+  .year-grid.grid--cols2,
+  .year-grid.grid--cols4 { grid-template-columns: 1fr; justify-content: stretch; }
   .view-seg { display: none; }
+  .year-head { font-size: clamp(40px, 16vw, 90px); }
   .contact { font-size: 10px; padding: 5px 8px; }
 }
