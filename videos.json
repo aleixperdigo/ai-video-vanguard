@@ -226,9 +226,8 @@
       "tool": "Sora",
       "date": "2024",
       "categories": ["Transiciones", "Estética / Arte", "Narrativa"],
-      "ads": true,
       "highlight": "Primer videoclip oficial hecho con Sora",
-      "description": "Videoclip oficial de Washed Out dirigido por Paul Trillo (transiciones de zoom infinito). ⚠ No es un anuncio: es un videoclip musical.",
+      "description": "Videoclip oficial de Washed Out dirigido por Paul Trillo; transiciones de zoom infinito continuo. Primer videoclip comisionado con Sora.",
       "source": "https://www.youtube.com/watch?v=-Nb-M1GAOX8"
     },
     {
@@ -239,9 +238,8 @@
       "tool": "Runway",
       "date": "2023",
       "categories": ["Consistencia de personaje", "Narrativa"],
-      "ads": true,
       "highlight": "Runway Gen:48 · Best Character (2023)",
-      "description": "Cortometraje ganador de 'Best Character' en el Runway Gen:48 (2023). ⚠ No es un anuncio: es un cortometraje.",
+      "description": "Cortometraje ganador de 'Best Character' en el Runway Gen:48 (2023).",
       "source": "https://www.youtube.com/watch?v=7K65pYWa220"
     },
     {
@@ -252,9 +250,8 @@
       "tool": "Luma",
       "date": "2024",
       "categories": ["Narrativa", "Estética / Arte"],
-      "ads": true,
       "highlight": "Corto IA (Midjourney + Luma Dream Machine)",
-      "description": "Cortometraje de oficina con 'marionetas'. Imágenes en Midjourney, vídeo en Luma Dream Machine. ⚠ No es un anuncio: es un cortometraje.",
+      "description": "Cortometraje de oficina con 'marionetas'. Imágenes en Midjourney, vídeo en Luma Dream Machine.",
       "source": "https://www.youtube.com/watch?v=t_SgA6ymPuc"
     },
     {
