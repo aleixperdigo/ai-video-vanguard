@@ -13,7 +13,8 @@
     sortMode: "date", // "date" | "likes"
     sortDir: "desc", // desc = más nuevo primero (lo último, arriba)
     hideScifi: true, // por defecto sci-fi / fantasy EXCLUIDO (OUT)
-    hideAds: false, // por defecto ads INCLUIDOS (IN)
+    hideCartoon: true, // por defecto cartoon EXCLUIDO (OUT)
+    hideAds: true, // por defecto ads EXCLUIDOS (OUT)
     cols: 2, // referencias por fila (1 / 2 / 4)
     filtered: [],
     rendered: 0,
@@ -54,7 +55,7 @@
     }
 
     buildChips(els.filters, state.categories, "chip", state.activeCats);
-    buildChips(els.tools, state.tools, "chip chip--tool", state.activeTools);
+    // Los filtros por herramienta se ocultan (la clasificación se mantiene en los datos y en la ficha)
     bindEvents();
     render();
   }
@@ -145,6 +146,17 @@
       });
     }
 
+    const cartoon = document.getElementById("cartoonToggle");
+    if (cartoon) {
+      cartoon.addEventListener("click", () => {
+        state.hideCartoon = !state.hideCartoon;
+        const included = !state.hideCartoon;
+        cartoon.setAttribute("aria-pressed", included ? "true" : "false");
+        cartoon.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
+        render();
+      });
+    }
+
     const ads = document.getElementById("adsToggle");
     if (ads) {
       ads.addEventListener("click", () => {
@@ -160,6 +172,8 @@
   function matches(v) {
     // Toggle sci-fi / fantasy
     if (state.hideScifi && v.scifiFantasy) return false;
+    // Toggle cartoon
+    if (state.hideCartoon && v.cartoon) return false;
     // Toggle ads
     if (state.hideAds && v.ads) return false;
     // Categorías: el vídeo debe tener TODAS las categorías activas

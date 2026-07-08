@@ -39,6 +39,7 @@
       "id": "junkyard-king-ep1",
       "youtubeId": "hR5SLjOsnj4",
       "scifiFantasy": true,
+      "cartoon": true,
       "title": "Junkyard King — EP1: \"Training Day\"",
       "director": "Henry Daubrez",
       "tool": "Veo",
@@ -124,6 +125,7 @@
       "id": "kok-boru-higgsfield",
       "youtubeId": "BwVG_n9-jz4",
       "scifiFantasy": true,
+      "cartoon": true,
       "title": "Kök Börü — Teaser",
       "director": "Higgsfield AI",
       "tool": "Higgsfield",
@@ -402,6 +404,7 @@
     {
       "id": "ausencia-gen48",
       "youtubeId": "e2tY04HKnTc",
+      "cartoon": true,
       "title": "Ausencia — GEN:48 Aleph Edition",
       "director": "Contanimation",
       "tool": "Runway",
