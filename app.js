@@ -98,6 +98,17 @@
       render();
     });
 
+    const view = document.getElementById("viewToggle");
+    if (view) {
+      view.addEventListener("click", () => {
+        const multi = els.grid.classList.toggle("grid--multi");
+        view.setAttribute("aria-pressed", multi ? "true" : "false");
+        const label = multi ? "Ver de una en una" : "Ver 4 por fila";
+        view.setAttribute("aria-label", label);
+        view.setAttribute("title", label);
+      });
+    }
+
     const genre = document.getElementById("genreToggle");
     if (genre) {
       genre.addEventListener("click", () => {

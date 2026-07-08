@@ -269,12 +269,48 @@ body {
 }
 .sort:active { transform: translate(1px, 1px); }
 
+.toolbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.view-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--line);
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.view-toggle:hover { border-color: var(--ink); }
+.view-toggle:active { transform: translate(1px, 1px); }
+.view-toggle[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.view-toggle svg { display: block; }
+.view-toggle__single { display: none; }
+.view-toggle[aria-pressed="true"] .view-toggle__grid { display: none; }
+.view-toggle[aria-pressed="true"] .view-toggle__single { display: block; }
+
 /* ---------- Grid ---------- */
 .grid {
   padding: var(--pad);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  /* Por defecto: una sola referencia por fila (centrada, grande) */
+  grid-template-columns: minmax(0, 920px);
+  justify-content: center;
+}
+.grid.grid--multi {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  justify-content: stretch;
+}
+@media (max-width: 1100px) {
+  .grid.grid--multi { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .card {
@@ -502,6 +538,9 @@ body {
 }
 
 @media (max-width: 520px) {
-  .grid { grid-template-columns: 1fr; }
+  /* En portrait / móvil siempre 1 por fila, sin importar el modo */
+  .grid,
+  .grid.grid--multi { grid-template-columns: 1fr; justify-content: stretch; }
+  .view-toggle { display: none; }
   .contact { font-size: 10px; padding: 5px 8px; }
 }
