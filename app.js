@@ -234,12 +234,16 @@
     };
 
     const makeSection = (year, extraClass) => {
+      const era = eraOf(year);
       const sect = document.createElement("section");
-      sect.className = "year-sect year-sect--" + eraOf(year) + (extraClass ? " " + extraClass : "");
-      const head = document.createElement("div");
-      head.className = "year-head" + (extraClass ? " year-head--pinned" : "");
-      head.textContent = extraClass ? (year === "S/F" ? "CLÁSICO" : year + " · el clásico") : year === "S/F" ? "SIN FECHA" : year;
-      sect.appendChild(head);
+      sect.className = "year-sect year-sect--" + era + (extraClass ? " " + extraClass : "");
+      // El año base (2026 / "now") no lleva el gran título de salto de página
+      if (extraClass || era !== "now") {
+        const head = document.createElement("div");
+        head.className = "year-head" + (extraClass ? " year-head--pinned" : "");
+        head.textContent = extraClass ? (year === "S/F" ? "CLÁSICO" : year + " · el clásico") : year === "S/F" ? "SIN FECHA" : year;
+        sect.appendChild(head);
+      }
       const grid = document.createElement("div");
       grid.className = "year-grid " + colsClass;
       sect.appendChild(grid);

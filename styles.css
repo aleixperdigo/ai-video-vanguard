@@ -324,6 +324,8 @@ body {
 .year-sect--old { background: #2c2c2c; }             /* 2024 / 2023 / anterior : gris más claro */
 .year-sect--nd { background: transparent; }          /* sin fecha */
 .year-sect--pinned { border-top: 2px solid var(--line); }
+/* El año base (2026) no tiene título grande: da aire arriba a sus tarjetas */
+.year-sect--now > .year-grid { padding-top: var(--pad); }
 
 .year-head {
   padding: calc(var(--pad) * 1.1) var(--pad) 8px;

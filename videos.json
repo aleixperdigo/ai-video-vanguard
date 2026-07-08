@@ -24,7 +24,13 @@
       "director": "PJ Ace",
       "tool": "Dreamina",
       "date": "2026-06-05",
-      "categories": ["Fotorrealismo", "VFX", "Worldbuilding", "Movimiento de cámara", "Narrativa"],
+      "categories": [
+        "Fotorrealismo",
+        "VFX",
+        "Worldbuilding",
+        "Movimiento de cámara",
+        "Narrativa"
+      ],
       "highlight": "Hecho por 3 personas en 2 semanas",
       "description": "Teaser de largometraje híbrido. Modelos: Octo + Seedance 2.0. Equipo: PJ Ace, Dan Weller, Karim Youssef, Stephen Quach.",
       "source": "https://www.youtube.com/watch?v=MsREdHXtdWM"
@@ -36,8 +42,14 @@
       "title": "Junkyard King — EP1: \"Training Day\"",
       "director": "Henry Daubrez",
       "tool": "Veo",
-      "date": "",
-      "categories": ["Narrativa", "Consistencia de personaje", "Estética / Arte", "Fotorrealismo", "Coherencia temporal"],
+      "date": "2026-06-03",
+      "categories": [
+        "Narrativa",
+        "Consistencia de personaje",
+        "Estética / Arte",
+        "Fotorrealismo",
+        "Coherencia temporal"
+      ],
       "highlight": "Primer Filmmaker in Residence de Google Flow",
       "description": "EP1 de una serie de 2 episodios (~16 min) ambientada en los 80: Artie, un adolescente obsesionado con VHS y cine de samuráis. Hecho con Google Flow (Veo + Nano Banana).",
       "source": "https://www.youtube.com/watch?v=hR5SLjOsnj4"
@@ -49,8 +61,13 @@
       "title": "Last Forever",
       "director": "László Gaál",
       "tool": "Runway",
-      "date": "",
-      "categories": ["Narrativa", "Estética / Arte", "Fotorrealismo", "Coherencia temporal"],
+      "date": "2026-06-17",
+      "categories": [
+        "Narrativa",
+        "Estética / Arte",
+        "Fotorrealismo",
+        "Coherencia temporal"
+      ],
       "highlight": "Gran Premio — Runway Big Ad Contest",
       "description": "Anuncio ganador del Gran Premio del Runway Big Ad Contest (productos que no existen).",
       "source": "https://www.youtube.com/watch?v=wDfhWrKExJ4"
@@ -61,8 +78,13 @@
       "title": "Morocco 4K — a Kling AI test",
       "director": "László Gaál",
       "tool": "Kling",
-      "date": "",
-      "categories": ["Fotorrealismo", "Movimiento de cámara", "Estética / Arte", "Coherencia temporal"],
+      "date": "2026-05-12",
+      "categories": [
+        "Fotorrealismo",
+        "Movimiento de cámara",
+        "Estética / Arte",
+        "Coherencia temporal"
+      ],
       "highlight": "Test de paisaje en 4K",
       "description": "Prueba de capacidades de Kling: paisajes de Marruecos en 4K.",
       "source": "https://www.youtube.com/watch?v=bc4xROkyGr8"
@@ -73,8 +95,13 @@
       "title": "Created this for my Father using AI and a Family Portrait",
       "director": "Dave Clark",
       "tool": "",
-      "date": "",
-      "categories": ["Consistencia de personaje", "Narrativa", "Fotorrealismo", "Estética / Arte"],
+      "date": "2026-06-21",
+      "categories": [
+        "Consistencia de personaje",
+        "Narrativa",
+        "Fotorrealismo",
+        "Estética / Arte"
+      ],
       "highlight": "De un retrato familiar a vídeo",
       "description": "Pieza personal: Dave Clark anima un retrato familiar como homenaje a su padre. Herramienta por confirmar.",
       "source": "https://www.youtube.com/watch?v=DDmnoipFOpY"
@@ -85,8 +112,10 @@
       "title": "Salty",
       "director": "Jordan Daniel Chesney",
       "tool": "",
-      "date": "",
-      "categories": ["Narrativa"],
+      "date": "2026-07-07",
+      "categories": [
+        "Narrativa"
+      ],
       "highlight": "",
       "description": "Cortometraje de Jordan Daniel Chesney (JDC Entertainment), estudio de cine con IA generativa. Herramienta, fecha y categorías por confirmar.",
       "source": "https://www.youtube.com/watch?v=iapXQ-Y36sI"
@@ -98,8 +127,12 @@
       "title": "Kök Börü — Teaser",
       "director": "Higgsfield AI",
       "tool": "Higgsfield",
-      "date": "",
-      "categories": ["Estética / Arte", "Worldbuilding", "Narrativa"],
+      "date": "2026-06-24",
+      "categories": [
+        "Estética / Arte",
+        "Worldbuilding",
+        "Narrativa"
+      ],
       "highlight": "Higgsfield Original · corto de animación",
       "description": "Teaser oficial de un cortometraje de animación (2026). Producido por Higgsfield AI. Fecha exacta por confirmar.",
       "source": "https://www.youtube.com/watch?v=BwVG_n9-jz4"
@@ -110,8 +143,13 @@
       "title": "Zephyr — Episode 1",
       "director": "Higgsfield AI",
       "tool": "Higgsfield",
-      "date": "",
-      "categories": ["Narrativa", "Worldbuilding", "Consistencia de personaje", "Estética / Arte"],
+      "date": "2026-04-10",
+      "categories": [
+        "Narrativa",
+        "Worldbuilding",
+        "Consistencia de personaje",
+        "Estética / Arte"
+      ],
       "highlight": "Higgsfield Original Series · EP1",
       "description": "Primer episodio de una serie original de Higgsfield AI (2026). Fecha exacta por confirmar.",
       "source": "https://www.youtube.com/watch?v=LQ-vSa9_H98"
@@ -123,8 +161,14 @@
       "title": "Mork — Viking Action Series, EP1",
       "director": "Higgsfield AI",
       "tool": "Higgsfield",
-      "date": "",
-      "categories": ["Narrativa", "Consistencia de personaje", "Movimiento de cámara", "Worldbuilding", "Fotorrealismo"],
+      "date": "2026-04-20",
+      "categories": [
+        "Narrativa",
+        "Consistencia de personaje",
+        "Movimiento de cámara",
+        "Worldbuilding",
+        "Fotorrealismo"
+      ],
       "highlight": "Higgsfield Original Series · acción vikinga",
       "description": "Serie de acción episódica (~22 min) de Higgsfield AI, 4K. Producida con Seedance 2.0. Fecha exacta por confirmar.",
       "source": "https://www.youtube.com/watch?v=F6MgT_Bdgz8"
@@ -137,7 +181,13 @@
       "director": "Runway Studios",
       "tool": "Runway",
       "date": "2026-02-23",
-      "categories": ["Worldbuilding", "Fotorrealismo", "Estética / Arte", "Coherencia temporal", "Consistencia de personaje"],
+      "categories": [
+        "Worldbuilding",
+        "Fotorrealismo",
+        "Estética / Arte",
+        "Coherencia temporal",
+        "Consistencia de personaje"
+      ],
       "highlight": "La luz como personaje · Runway Gen-4",
       "description": "Cortometraje oficial de Runway Studios con Gen-4. Worldbuilding y consistencia de entorno en un paisaje alienígena.",
       "source": "https://www.youtube.com/watch?v=BwoCznxxMBw"
@@ -149,8 +199,14 @@
       "title": "The Chronicles of Bone — Prologue: The Chosen Knight",
       "director": "Kavan the Kid",
       "tool": "Freepik",
-      "date": "",
-      "categories": ["Worldbuilding", "Consistencia de personaje", "Narrativa", "Estética / Arte", "Fotorrealismo"],
+      "date": "2026-04-07",
+      "categories": [
+        "Worldbuilding",
+        "Consistencia de personaje",
+        "Narrativa",
+        "Estética / Arte",
+        "Fotorrealismo"
+      ],
       "highlight": "Serie original de fantasía IA (Freepik)",
       "description": "Prólogo de una serie de fantasía serializada. Producido con la suite de Freepik/Magnific (rutea Kling/Veo/Seedance por plano). Fecha exacta por confirmar.",
       "source": "https://www.youtube.com/watch?v=6whZssGM4cw"
@@ -161,8 +217,13 @@
       "title": "The Interview (2026)",
       "director": "Particle Panic",
       "tool": "Seedance",
-      "date": "",
-      "categories": ["Lipsync", "Consistencia de personaje", "Fotorrealismo", "Narrativa"],
+      "date": "2026-04-03",
+      "categories": [
+        "Lipsync",
+        "Consistencia de personaje",
+        "Fotorrealismo",
+        "Narrativa"
+      ],
       "highlight": "Actuación facial + audio sincronizado",
       "description": "Exploración de Seedance 2.0 (Dreamina) en 4K: drama de diálogo cara a cara con lipsync y actuación facial. Destacado por Curious Refuge. Fecha exacta por confirmar.",
       "source": "https://www.youtube.com/watch?v=BGo578sWCGw"
@@ -173,8 +234,10 @@
       "title": "Dōkyō",
       "director": "László Gaál",
       "tool": "",
-      "date": "",
-      "categories": ["Estética / Arte"],
+      "date": "2026-06-18",
+      "categories": [
+        "Estética / Arte"
+      ],
       "highlight": "",
       "description": "Pieza de László Gaál (color + IA generativa). Herramienta, fecha y categorías por confirmar.",
       "source": "https://www.youtube.com/watch?v=DXTv_l056x8"
@@ -185,8 +248,11 @@
       "title": "Forever Means Forever",
       "director": "Contanimation Films",
       "tool": "Runway",
-      "date": "2026",
-      "categories": ["Narrativa", "Estética / Arte"],
+      "date": "2026-03-30",
+      "categories": [
+        "Narrativa",
+        "Estética / Arte"
+      ],
       "ads": true,
       "highlight": "Spec ad · Runway Big Ad Contest 2026",
       "description": "Anuncio de producto ficticio (brief de pilas) de la Runway Big Ad Contest 2026. Runway Gen-4.",
@@ -198,8 +264,11 @@
       "title": "PROMPTR won Runway's Big Ad Contest",
       "director": "PROMPTR Studios",
       "tool": "Runway",
-      "date": "2026",
-      "categories": ["Narrativa", "Estética / Arte"],
+      "date": "2026-05-20",
+      "categories": [
+        "Narrativa",
+        "Estética / Arte"
+      ],
       "ads": true,
       "highlight": "Ganador · Runway Big Ad Contest 2026",
       "description": "Spec ad premiado de la Runway Big Ad Contest 2026. Runway Gen-4.",
@@ -211,8 +280,11 @@
       "title": "Snooze Patch — Big Ad Contest 2026",
       "director": "Art of N.e.M",
       "tool": "Runway",
-      "date": "2026",
-      "categories": ["Narrativa", "Estética / Arte"],
+      "date": "2026-03-31",
+      "categories": [
+        "Narrativa",
+        "Estética / Arte"
+      ],
       "ads": true,
       "highlight": "Spec ad · Runway Big Ad Contest 2026",
       "description": "Anuncio de producto ficticio 'Snooze Patch' enviado a la Runway Big Ad Contest 2026.",
@@ -224,8 +296,12 @@
       "title": "Washed Out — The Hardest Part",
       "director": "Paul Trillo",
       "tool": "Sora",
-      "date": "2024",
-      "categories": ["Transiciones", "Estética / Arte", "Narrativa"],
+      "date": "2024-05-02",
+      "categories": [
+        "Transiciones",
+        "Estética / Arte",
+        "Narrativa"
+      ],
       "highlight": "Primer videoclip oficial hecho con Sora",
       "description": "Videoclip oficial de Washed Out dirigido por Paul Trillo; transiciones de zoom infinito continuo. Primer videoclip comisionado con Sora.",
       "source": "https://www.youtube.com/watch?v=-Nb-M1GAOX8"
@@ -236,8 +312,11 @@
       "title": "Let Us Explore",
       "director": "Gabe Michael",
       "tool": "Runway",
-      "date": "2023",
-      "categories": ["Consistencia de personaje", "Narrativa"],
+      "date": "2023-10-21",
+      "categories": [
+        "Consistencia de personaje",
+        "Narrativa"
+      ],
       "highlight": "Runway Gen:48 · Best Character (2023)",
       "description": "Cortometraje ganador de 'Best Character' en el Runway Gen:48 (2023).",
       "source": "https://www.youtube.com/watch?v=7K65pYWa220"
@@ -248,8 +327,11 @@
       "title": "Poof",
       "director": "Pizza Later",
       "tool": "Luma",
-      "date": "2024",
-      "categories": ["Narrativa", "Estética / Arte"],
+      "date": "2024-07-12",
+      "categories": [
+        "Narrativa",
+        "Estética / Arte"
+      ],
       "highlight": "Corto IA (Midjourney + Luma Dream Machine)",
       "description": "Cortometraje de oficina con 'marionetas'. Imágenes en Midjourney, vídeo en Luma Dream Machine.",
       "source": "https://www.youtube.com/watch?v=t_SgA6ymPuc"
@@ -260,8 +342,12 @@
       "title": "The Pisanos — Porsche (spec ad)",
       "director": "László Gaál",
       "tool": "Veo",
-      "date": "2025",
-      "categories": ["Fotorrealismo", "Movimiento de cámara", "Estética / Arte"],
+      "date": "2025-01-20",
+      "categories": [
+        "Fotorrealismo",
+        "Movimiento de cámara",
+        "Estética / Arte"
+      ],
       "ads": true,
       "highlight": "Spec ad Porsche · viral (Veo 2, 2025)",
       "description": "Spec ad no oficial de Porsche por László Gaál, viral en enero 2025. Google Veo 2.",
@@ -273,8 +359,11 @@
       "title": "Coca-Cola — Holidays Are Coming",
       "director": "Coca-Cola",
       "tool": "",
-      "date": "2024",
-      "categories": ["Fotorrealismo", "Estética / Arte"],
+      "date": "2025-11-03",
+      "categories": [
+        "Fotorrealismo",
+        "Estética / Arte"
+      ],
       "ads": true,
       "highlight": "Anuncio de marca real hecho con IA (polémico)",
       "description": "Anuncio navideño oficial de Coca-Cola generado con IA (varios estudios: Secret Level, Silverside, Wild Card). Herramienta única sin confirmar.",
@@ -286,12 +375,117 @@
       "title": "AI Will Smith eating spaghetti",
       "director": "Roy Cassette",
       "tool": "",
-      "date": "2023",
+      "date": "2023-04-01",
       "categories": [],
       "pinBottom": true,
       "highlight": "El punto de partida (2023)",
       "description": "El meme fundacional del vídeo IA. Aquí como referencia de 'de dónde venimos'. No es un anuncio.",
       "source": "https://www.youtube.com/watch?v=XQr4Xklqzw8"
+    },
+    {
+      "id": "children-of-a-dead-star",
+      "youtubeId": "IfScba6NElY",
+      "title": "Children of a Dead Star — Trailer",
+      "director": "Particle Panic",
+      "tool": "",
+      "date": "2026-05-27",
+      "categories": [
+        "Fotorrealismo",
+        "Narrativa",
+        "Coherencia temporal",
+        "Movimiento de cámara"
+      ],
+      "highlight": "Tráiler de corto IA (4K)",
+      "description": "Tráiler de cortometraje ambientado en la Alemania del Este de 1979: una estación de vigilancia militar intercepta una señal alienígena. Herramienta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=IfScba6NElY"
+    },
+    {
+      "id": "ausencia-gen48",
+      "youtubeId": "e2tY04HKnTc",
+      "title": "Ausencia — GEN:48 Aleph Edition",
+      "director": "Contanimation",
+      "tool": "Runway",
+      "date": "2025-08-25",
+      "categories": [
+        "Lipsync",
+        "Consistencia de personaje",
+        "Narrativa",
+        "Estética / Arte"
+      ],
+      "highlight": "Mejor Animación · GEN:48 Aleph",
+      "description": "Corto animado con IA en 48h para el reto GEN:48 Aleph de Runway; secuencia dialogada muy emotiva. Ganó Mejor Animación en los Bionic Awards.",
+      "source": "https://www.youtube.com/watch?v=e2tY04HKnTc"
+    },
+    {
+      "id": "el-forastero",
+      "youtubeId": "SHfdJY-WWOg",
+      "title": "El Forastero (The Alien)",
+      "director": "Javier De La Chica",
+      "tool": "Runway",
+      "date": "2026-02-02",
+      "scifiFantasy": true,
+      "categories": [
+        "Consistencia de personaje",
+        "Movimiento de cámara",
+        "Estética / Arte",
+        "Worldbuilding"
+      ],
+      "highlight": "Western + ciencia ficción",
+      "description": "Teaser conceptual sin diálogos que hibrida western y sci-fi en torno a un forastero alienígena; estética 'Anirreal' de texturas hiperrealistas.",
+      "source": "https://www.youtube.com/watch?v=SHfdJY-WWOg"
+    },
+    {
+      "id": "insane-seedance-ailot",
+      "youtubeId": "xiIW1NFTabA",
+      "title": "Insane Seedance 2.0 film — AI on the Lot",
+      "director": "PJ Ace",
+      "tool": "Seedance",
+      "date": "2026-04-02",
+      "categories": [
+        "Fotorrealismo",
+        "Movimiento de cámara",
+        "Coherencia temporal",
+        "VFX"
+      ],
+      "highlight": "Demo Seedance 2.0 · AI on the Lot",
+      "description": "Cortometraje de demostración generado íntegramente con Seedance 2.0, presentado en el evento AI on the Lot.",
+      "source": "https://www.youtube.com/watch?v=xiIW1NFTabA"
+    },
+    {
+      "id": "zelda-botw-rrated",
+      "youtubeId": "v0N0wAqqXJ8",
+      "title": "Zelda: Breath of the Wild — R-Rated AI Trailer",
+      "director": "PJ Ace",
+      "tool": "Freepik",
+      "date": "2026-01-06",
+      "scifiFantasy": true,
+      "categories": [
+        "Fotorrealismo",
+        "Worldbuilding",
+        "Consistencia de personaje",
+        "VFX"
+      ],
+      "highlight": "Tráiler live-action ficticio · hecho en 5 días",
+      "description": "Tráiler ficticio (clasificación R) de una película live-action de The Legend of Zelda: Breath of the Wild, hecho en cinco días con la suite de Freepik.",
+      "source": "https://www.youtube.com/watch?v=v0N0wAqqXJ8"
+    },
+    {
+      "id": "kalshi-nba-ad",
+      "youtubeId": "-QMftwmyW-A",
+      "title": "Kalshi — AI ad (NBA Finals)",
+      "director": "PJ Ace",
+      "tool": "Veo",
+      "date": "2025-06-11",
+      "ads": true,
+      "categories": [
+        "Fotorrealismo",
+        "VFX",
+        "Narrativa",
+        "Coherencia temporal"
+      ],
+      "highlight": "Anuncio viral · emitido en las Finales NBA",
+      "description": "Anuncio de Kalshi generado con IA (Google Veo 3), escenas caóticas estilo GTA, emitido durante las Finales de la NBA.",
+      "source": "https://www.youtube.com/watch?v=-QMftwmyW-A"
     }
   ]
 }
