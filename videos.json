@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "REPOSITORIO DE VÍDEO IA",
+    "subtitle": "Lo último, arriba · feed infinito ordenado por fecha de subida"
+  },
+  "categories": [
+    "Consistencia de personaje",
+    "Lipsync",
+    "Movimiento de cámara",
+    "VFX",
+    "Coherencia temporal",
+    "Fotorrealismo",
+    "Estética / Arte",
+    "Transiciones",
+    "Narrativa",
+    "Worldbuilding"
+  ],
+  "videos": [
+    {
+      "id": "nexus-kafar",
+      "youtubeId": "MsREdHXtdWM",
+      "scifiFantasy": true,
+      "title": "Nexus — Wet Markets of Kafar",
+      "director": "PJ Ace",
+      "tool": "Dreamina",
+      "date": "2026-06-05",
+      "categories": ["Fotorrealismo", "VFX", "Worldbuilding", "Movimiento de cámara", "Narrativa"],
+      "highlight": "Hecho por 3 personas en 2 semanas",
+      "description": "Teaser de largometraje híbrido. Modelos: Octo + Seedance 2.0. Equipo: PJ Ace, Dan Weller, Karim Youssef, Stephen Quach.",
+      "source": "https://www.youtube.com/watch?v=MsREdHXtdWM"
+    },
+    {
+      "id": "junkyard-king-ep1",
+      "youtubeId": "hR5SLjOsnj4",
+      "title": "Junkyard King — EP1: \"Training Day\"",
+      "director": "Henry Daubrez",
+      "tool": "Veo",
+      "date": "",
+      "categories": ["Narrativa", "Consistencia de personaje", "Estética / Arte", "Fotorrealismo", "Coherencia temporal"],
+      "highlight": "Primer Filmmaker in Residence de Google Flow",
+      "description": "EP1 de una serie de 2 episodios (~16 min) ambientada en los 80: Artie, un adolescente obsesionado con VHS y cine de samuráis. Hecho con Google Flow (Veo + Nano Banana).",
+      "source": "https://www.youtube.com/watch?v=hR5SLjOsnj4"
+    },
+    {
+      "id": "last-forever-laszlo",
+      "youtubeId": "wDfhWrKExJ4",
+      "title": "Last Forever",
+      "director": "László Gaál",
+      "tool": "Runway",
+      "date": "",
+      "categories": ["Narrativa", "Estética / Arte", "Fotorrealismo", "Coherencia temporal"],
+      "highlight": "Gran Premio — Runway Big Ad Contest",
+      "description": "Anuncio ganador del Gran Premio del Runway Big Ad Contest (productos que no existen).",
+      "source": "https://www.youtube.com/watch?v=wDfhWrKExJ4"
+    },
+    {
+      "id": "morocco-kling-test",
+      "youtubeId": "bc4xROkyGr8",
+      "title": "Morocco 4K — a Kling AI test",
+      "director": "László Gaál",
+      "tool": "Kling",
+      "date": "",
+      "categories": ["Fotorrealismo", "Movimiento de cámara", "Estética / Arte", "Coherencia temporal"],
+      "highlight": "Test de paisaje en 4K",
+      "description": "Prueba de capacidades de Kling: paisajes de Marruecos en 4K.",
+      "source": "https://www.youtube.com/watch?v=bc4xROkyGr8"
+    },
+    {
+      "id": "father-portrait-daveclark",
+      "youtubeId": "DDmnoipFOpY",
+      "title": "Created this for my Father using AI and a Family Portrait",
+      "director": "Dave Clark",
+      "tool": "",
+      "date": "",
+      "categories": ["Consistencia de personaje", "Narrativa", "Fotorrealismo", "Estética / Arte"],
+      "highlight": "De un retrato familiar a vídeo",
+      "description": "Pieza personal: Dave Clark anima un retrato familiar como homenaje a su padre. Herramienta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=DDmnoipFOpY"
+    },
+    {
+      "id": "salty-chesney",
+      "youtubeId": "iapXQ-Y36sI",
+      "title": "Salty",
+      "director": "Jordan Daniel Chesney",
+      "tool": "",
+      "date": "",
+      "categories": ["Narrativa"],
+      "highlight": "",
+      "description": "Cortometraje de Jordan Daniel Chesney (JDC Entertainment), estudio de cine con IA generativa. Herramienta, fecha y categorías por confirmar.",
+      "source": "https://www.youtube.com/watch?v=iapXQ-Y36sI"
+    },
+    {
+      "id": "kok-boru-higgsfield",
+      "youtubeId": "BwVG_n9-jz4",
+      "scifiFantasy": true,
+      "title": "Kök Börü — Teaser",
+      "director": "Higgsfield AI",
+      "tool": "Higgsfield",
+      "date": "",
+      "categories": ["Estética / Arte", "Worldbuilding", "Narrativa"],
+      "highlight": "Higgsfield Original · corto de animación",
+      "description": "Teaser oficial de un cortometraje de animación (2026). Producido por Higgsfield AI. Fecha exacta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=BwVG_n9-jz4"
+    },
+    {
+      "id": "zephyr-ep1-higgsfield",
+      "youtubeId": "LQ-vSa9_H98",
+      "title": "Zephyr — Episode 1",
+      "director": "Higgsfield AI",
+      "tool": "Higgsfield",
+      "date": "",
+      "categories": ["Narrativa", "Worldbuilding", "Consistencia de personaje", "Estética / Arte"],
+      "highlight": "Higgsfield Original Series · EP1",
+      "description": "Primer episodio de una serie original de Higgsfield AI (2026). Fecha exacta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=LQ-vSa9_H98"
+    },
+    {
+      "id": "mork-ep1-higgsfield",
+      "youtubeId": "F6MgT_Bdgz8",
+      "scifiFantasy": true,
+      "title": "Mork — Viking Action Series, EP1",
+      "director": "Higgsfield AI",
+      "tool": "Higgsfield",
+      "date": "",
+      "categories": ["Narrativa", "Consistencia de personaje", "Movimiento de cámara", "Worldbuilding", "Fotorrealismo"],
+      "highlight": "Higgsfield Original Series · acción vikinga",
+      "description": "Serie de acción episódica (~22 min) de Higgsfield AI, 4K. Producida con Seedance 2.0. Fecha exacta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=F6MgT_Bdgz8"
+    },
+    {
+      "id": "morningstar-runway",
+      "youtubeId": "BwoCznxxMBw",
+      "scifiFantasy": true,
+      "title": "Morningstar",
+      "director": "Runway Studios",
+      "tool": "Runway",
+      "date": "2026-02-23",
+      "categories": ["Worldbuilding", "Fotorrealismo", "Estética / Arte", "Coherencia temporal", "Consistencia de personaje"],
+      "highlight": "La luz como personaje · Runway Gen-4",
+      "description": "Cortometraje oficial de Runway Studios con Gen-4. Worldbuilding y consistencia de entorno en un paisaje alienígena.",
+      "source": "https://www.youtube.com/watch?v=BwoCznxxMBw"
+    },
+    {
+      "id": "chronicles-of-bone-kavan",
+      "youtubeId": "6whZssGM4cw",
+      "scifiFantasy": true,
+      "title": "The Chronicles of Bone — Prologue: The Chosen Knight",
+      "director": "Kavan the Kid",
+      "tool": "Freepik",
+      "date": "",
+      "categories": ["Worldbuilding", "Consistencia de personaje", "Narrativa", "Estética / Arte", "Fotorrealismo"],
+      "highlight": "Serie original de fantasía IA (Freepik)",
+      "description": "Prólogo de una serie de fantasía serializada. Producido con la suite de Freepik/Magnific (rutea Kling/Veo/Seedance por plano). Fecha exacta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=6whZssGM4cw"
+    },
+    {
+      "id": "the-interview-particlepanic",
+      "youtubeId": "BGo578sWCGw",
+      "title": "The Interview (2026)",
+      "director": "Particle Panic",
+      "tool": "Seedance",
+      "date": "",
+      "categories": ["Lipsync", "Consistencia de personaje", "Fotorrealismo", "Narrativa"],
+      "highlight": "Actuación facial + audio sincronizado",
+      "description": "Exploración de Seedance 2.0 (Dreamina) en 4K: drama de diálogo cara a cara con lipsync y actuación facial. Destacado por Curious Refuge. Fecha exacta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=BGo578sWCGw"
+    }
+  ]
+}
