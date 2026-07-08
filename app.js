@@ -150,12 +150,14 @@
   }
 
   function matches(v) {
-    // Toggle sci-fi / fantasy
-    if (state.hideScifi && v.scifiFantasy) return false;
-    // Toggle cartoon
-    if (state.hideCartoon && v.cartoon) return false;
-    // Toggle ads
-    if (state.hideAds && v.ads) return false;
+    // Un vídeo con flags de género (sci-fi/cartoon/ads) se muestra si AL MENOS
+    // UNO de sus flags está IN. Así, con Cartoon IN se ve un cartoon aunque sea
+    // también sci-fi y sci-fi esté OUT (el criterio activo manda).
+    const flags = [];
+    if (v.scifiFantasy) flags.push(!state.hideScifi);
+    if (v.cartoon) flags.push(!state.hideCartoon);
+    if (v.ads) flags.push(!state.hideAds);
+    if (flags.length && !flags.some(Boolean)) return false;
     // Categorías: el vídeo debe tener TODAS las categorías activas
     for (const c of state.activeCats) {
       if (!(v.categories || []).includes(c)) return false;
