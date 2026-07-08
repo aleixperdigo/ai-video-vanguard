@@ -274,43 +274,51 @@ body {
   align-items: center;
   gap: 8px;
 }
-.view-toggle {
+.view-seg {
+  display: inline-flex;
+  border: 2px solid var(--line);
+}
+.view-seg__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: var(--ink);
-  border: 2px solid var(--line);
-  padding: 7px 10px;
+  color: var(--dim);
+  border: 0;
+  border-right: 1px solid var(--line);
+  padding: 7px 9px;
   cursor: pointer;
 }
-.view-toggle:hover { border-color: var(--ink); }
-.view-toggle:active { transform: translate(1px, 1px); }
-.view-toggle[aria-pressed="true"] {
+.view-seg__btn:last-child { border-right: 0; }
+.view-seg__btn:hover { color: var(--ink); }
+.view-seg__btn:active { transform: translate(1px, 1px); }
+.view-seg__btn[aria-pressed="true"] {
   background: var(--ink);
   color: var(--bg);
-  border-color: var(--ink);
 }
-.view-toggle svg { display: block; }
-.view-toggle__single { display: none; }
-.view-toggle[aria-pressed="true"] .view-toggle__grid { display: none; }
-.view-toggle[aria-pressed="true"] .view-toggle__single { display: block; }
+.view-seg__btn svg { display: block; }
 
 /* ---------- Grid ---------- */
 .grid {
   padding: var(--pad);
   display: grid;
   gap: 20px;
-  /* Por defecto: una sola referencia por fila (centrada, grande) */
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* fallback = 2 por fila */
+}
+.grid.grid--cols1 {
   grid-template-columns: minmax(0, 920px);
   justify-content: center;
 }
-.grid.grid--multi {
+.grid.grid--cols2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: stretch;
+}
+.grid.grid--cols4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: stretch;
 }
 @media (max-width: 1100px) {
-  .grid.grid--multi { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid.grid--cols4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .card {
@@ -540,7 +548,9 @@ body {
 @media (max-width: 520px) {
   /* En portrait / móvil siempre 1 por fila, sin importar el modo */
   .grid,
-  .grid.grid--multi { grid-template-columns: 1fr; justify-content: stretch; }
-  .view-toggle { display: none; }
+  .grid.grid--cols1,
+  .grid.grid--cols2,
+  .grid.grid--cols4 { grid-template-columns: 1fr; justify-content: stretch; }
+  .view-seg { display: none; }
   .contact { font-size: 10px; padding: 5px 8px; }
 }

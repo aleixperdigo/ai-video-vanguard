@@ -98,14 +98,17 @@
       render();
     });
 
-    const view = document.getElementById("viewToggle");
-    if (view) {
-      view.addEventListener("click", () => {
-        const multi = els.grid.classList.toggle("grid--multi");
-        view.setAttribute("aria-pressed", multi ? "true" : "false");
-        const label = multi ? "Ver de una en una" : "Ver 4 por fila";
-        view.setAttribute("aria-label", label);
-        view.setAttribute("title", label);
+    const seg = document.getElementById("viewSeg");
+    if (seg) {
+      seg.addEventListener("click", (e) => {
+        const btn = e.target.closest(".view-seg__btn");
+        if (!btn) return;
+        const cols = btn.dataset.cols;
+        els.grid.classList.remove("grid--cols1", "grid--cols2", "grid--cols4");
+        els.grid.classList.add("grid--cols" + cols);
+        seg
+          .querySelectorAll(".view-seg__btn")
+          .forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
       });
     }
 
