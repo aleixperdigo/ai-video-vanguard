@@ -1,6 +1,10 @@
 (() => {
   "use strict";
 
+  // Features latentes (código guardado, desactivadas por ahora):
+  const CATEGORY_FILTERS_ENABLED = false; // chips de filtro por categoría (VFX, Worldbuilding…)
+  const LIKES_ENABLED = false; // botón de like + orden por likes
+
   const PAGE_SIZE = 12; // vídeos por lote en el scroll infinito
 
   const state = {
@@ -54,8 +58,8 @@
       return;
     }
 
-    buildChips(els.filters, state.categories, "chip", state.activeCats);
-    // Los filtros por herramienta se ocultan (la clasificación se mantiene en los datos y en la ficha)
+    // Filtros por categoría y por herramienta: latentes (la clasificación se mantiene en datos y ficha)
+    if (CATEGORY_FILTERS_ENABLED) buildChips(els.filters, state.categories, "chip", state.activeCats);
     bindEvents();
     render();
   }
@@ -94,32 +98,8 @@
       state.query = e.target.value.trim().toLowerCase();
       render();
     });
-    const sortLikes = document.getElementById("sortLikes");
-    const updateSortActive = () => {
-      els.sort.setAttribute("aria-pressed", state.sortMode === "date" ? "true" : "false");
-      if (sortLikes)
-        sortLikes.setAttribute("aria-pressed", state.sortMode === "likes" ? "true" : "false");
-    };
-
-    els.sort.addEventListener("click", () => {
-      if (state.sortMode !== "date") {
-        state.sortMode = "date"; // volver a orden temporal
-      } else {
-        state.sortDir = state.sortDir === "desc" ? "asc" : "desc";
-      }
-      els.sort.dataset.dir = state.sortDir;
-      els.sort.textContent = state.sortDir === "desc" ? "FECHA ↓" : "FECHA ↑";
-      updateSortActive();
-      render();
-    });
-
-    if (sortLikes) {
-      sortLikes.addEventListener("click", () => {
-        state.sortMode = "likes";
-        updateSortActive();
-        render();
-      });
-    }
+    // Orden: SIEMPRE por fecha, lo más nuevo arriba (regla fija). Sin botón.
+    // (El orden por likes queda latente; ver LIKES_ENABLED.)
 
     const seg = document.getElementById("viewSeg");
     if (seg) {
@@ -343,6 +323,7 @@
       body.appendChild(link);
     }
 
+    if (LIKES_ENABLED) {
     const like = document.createElement("button");
     like.className = "card__like";
     like.type = "button";
@@ -360,6 +341,7 @@
       if (state.sortMode === "likes") render();
     });
     body.appendChild(like);
+    }
 
     return node;
   }
