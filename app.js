@@ -10,6 +10,7 @@
     activeCats: new Set(),
     activeTools: new Set(),
     query: "",
+    sortMode: "date", // "date" | "likes"
     sortDir: "desc", // desc = más nuevo primero (lo último, arriba)
     hideScifi: true, // por defecto sci-fi / fantasy EXCLUIDO (OUT)
     hideAds: false, // por defecto ads INCLUIDOS (IN)
@@ -92,12 +93,32 @@
       state.query = e.target.value.trim().toLowerCase();
       render();
     });
+    const sortLikes = document.getElementById("sortLikes");
+    const updateSortActive = () => {
+      els.sort.setAttribute("aria-pressed", state.sortMode === "date" ? "true" : "false");
+      if (sortLikes)
+        sortLikes.setAttribute("aria-pressed", state.sortMode === "likes" ? "true" : "false");
+    };
+
     els.sort.addEventListener("click", () => {
-      state.sortDir = state.sortDir === "desc" ? "asc" : "desc";
+      if (state.sortMode !== "date") {
+        state.sortMode = "date"; // volver a orden temporal
+      } else {
+        state.sortDir = state.sortDir === "desc" ? "asc" : "desc";
+      }
       els.sort.dataset.dir = state.sortDir;
       els.sort.textContent = state.sortDir === "desc" ? "FECHA ↓" : "FECHA ↑";
+      updateSortActive();
       render();
     });
+
+    if (sortLikes) {
+      sortLikes.addEventListener("click", () => {
+        state.sortMode = "likes";
+        updateSortActive();
+        render();
+      });
+    }
 
     const seg = document.getElementById("viewSeg");
     if (seg) {
@@ -157,14 +178,23 @@
   }
 
   function render() {
-    // Vídeos sin fecha se van al final; el resto por fecha (lo último, arriba)
-    state.filtered = state.videos.filter(matches).sort((a, b) => {
+    // Comparador de fecha: sin fecha al final; newest-first en desc
+    const byDate = (a, b, dir) => {
       const da = a.date || "";
       const db = b.date || "";
       if (!da && !db) return 0;
       if (!da) return 1;
       if (!db) return -1;
-      return state.sortDir === "desc" ? db.localeCompare(da) : da.localeCompare(db);
+      return dir === "asc" ? da.localeCompare(db) : db.localeCompare(da);
+    };
+
+    state.filtered = state.videos.filter(matches).sort((a, b) => {
+      if (state.sortMode === "likes") {
+        const diff = getLikes(b.id) - getLikes(a.id); // más likes primero
+        if (diff !== 0) return diff;
+        return byDate(a, b, "desc"); // la fecha queda en segundo término
+      }
+      return byDate(a, b, state.sortDir);
     });
 
     els.count.textContent = `${state.filtered.length}/${state.videos.length}`;
@@ -262,6 +292,24 @@
       body.appendChild(link);
     }
 
+    const like = document.createElement("button");
+    like.className = "card__like";
+    like.type = "button";
+    like.setAttribute("aria-label", "Me gusta");
+    like.innerHTML =
+      '<svg class="card__like-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.9 5 5.4 5c2 0 3.4 1.1 4.6 2.6C11.2 6.1 12.6 5 14.6 5 18.1 5 19.6 8.6 22 11.8 19.5 16.4 12 21 12 21z"/></svg>' +
+      '<span class="card__like-count">' + getLikes(v.id) + "</span>";
+    like.addEventListener("click", () => {
+      const n = addLike(v.id);
+      like.querySelector(".card__like-count").textContent = n;
+      like.classList.remove("is-pop");
+      void like.offsetWidth; // reinicia la animación
+      like.classList.add("is-pop");
+      // si ordenamos por likes, re-render para reflejar el nuevo orden
+      if (state.sortMode === "likes") render();
+    });
+    body.appendChild(like);
+
     return node;
   }
 
@@ -273,6 +321,27 @@
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     iframe.allowFullscreen = true;
     thumb.replaceChildren(iframe);
+  }
+
+  // ---- Likes (localStorage; sin backend, cada like suma 1) ----
+  const LIKES_KEY = "videoLikes";
+  function getLikesMap() {
+    try {
+      return JSON.parse(localStorage.getItem(LIKES_KEY) || "{}") || {};
+    } catch (e) {
+      return {};
+    }
+  }
+  function getLikes(id) {
+    return getLikesMap()[id] || 0;
+  }
+  function addLike(id) {
+    const map = getLikesMap();
+    map[id] = (map[id] || 0) + 1;
+    try {
+      localStorage.setItem(LIKES_KEY, JSON.stringify(map));
+    } catch (e) {}
+    return map[id];
   }
 
   function fmtDate(iso) {

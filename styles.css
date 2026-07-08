@@ -263,9 +263,9 @@ body {
 }
 
 .sort {
-  background: var(--ink);
-  color: var(--bg);
-  border: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--line);
   padding: 8px 14px;
   font: inherit;
   font-size: 12px;
@@ -275,7 +275,13 @@ body {
   cursor: pointer;
   white-space: nowrap;
 }
+.sort:hover { border-color: var(--ink); }
 .sort:active { transform: translate(1px, 1px); }
+.sort[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
 
 .toolbar__actions {
   display: flex;
@@ -475,6 +481,42 @@ body {
   padding-bottom: 1px;
 }
 .card__source:hover { color: var(--accent); }
+
+.card__like {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  border: 1.5px solid var(--line);
+  color: var(--dim);
+  padding: 6px 11px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.card__like:hover { border-color: var(--accent); color: var(--accent); }
+.card__like-icon { width: 15px; height: 15px; fill: currentColor; display: block; }
+.card__like.is-pop { animation: like-pop 0.32s ease; }
+@keyframes like-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.22); color: var(--accent); }
+  100% { transform: scale(1); }
+}
+
+/* Pulso brillante suave en la fecha de publicación (solo con fecha real) */
+.thumb__date:not(.thumb__date--empty) {
+  animation: date-pulse 2.6s ease-in-out infinite;
+}
+@keyframes date-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 255, 69, 0); }
+  50% { box-shadow: 0 0 11px 1px rgba(232, 255, 69, 0.6); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .thumb__date:not(.thumb__date--empty) { animation: none; }
+}
 .tag {
   font-size: 10.5px;
   font-weight: 700;
