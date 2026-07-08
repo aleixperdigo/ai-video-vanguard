@@ -94,10 +94,12 @@
   }
 
   function bindEvents() {
-    els.search.addEventListener("input", (e) => {
-      state.query = e.target.value.trim().toLowerCase();
-      render();
-    });
+    if (els.search) {
+      els.search.addEventListener("input", (e) => {
+        state.query = e.target.value.trim().toLowerCase();
+        render();
+      });
+    }
     // Orden: SIEMPRE por fecha, lo más nuevo arriba (regla fija). Sin botón.
     // (El orden por likes queda latente; ver LIKES_ENABLED.)
 
