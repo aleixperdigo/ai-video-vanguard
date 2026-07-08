@@ -207,6 +207,7 @@ body {
   padding: 12px var(--pad);
   border-bottom: 1px solid var(--line);
   display: flex;
+  flex-direction: row-reverse; /* toggles a la izquierda, columnas a la derecha */
   align-items: center;
   justify-content: space-between;
   gap: 16px;
