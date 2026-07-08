@@ -36,7 +36,7 @@
       </summary>
       <div class="about__body">
         <p>Repositorio vivo de referencias de vídeo hecho con IA. Mantenido por <strong>Aleix Perdigó</strong>.</p>
-        <p>El vídeo IA avanza rápido. El criterio sobre lo que puede o no puede hacer suele basarse en referencias de hace meses; en IA, eso ya es material obsoleto.</p>
+        <p>El vídeo IA avanza rápido. El criterio sobre lo que puede o no puede hacer suele basarse en referencias de hace meses.</p>
         <p>Aquí solo entran piezas recientes, ordenadas por fecha: <strong>lo último, arriba</strong>. Para evaluar la IA por lo que hace hoy, no por lo que hacía el trimestre pasado.</p>
         <p class="about__cta">¿Falta una referencia reciente? → <a href="mailto:aleix.perdigo@goroka.tv">aleix.perdigo@goroka.tv</a></p>
       </div>
@@ -52,8 +52,11 @@
       autocomplete="off"
     />
     <div class="genre-row">
-      <button class="genre-toggle" id="genreToggle" type="button" aria-pressed="false">
-        <strong class="genre-toggle__verb">Incluir</strong>&nbsp;Sci-fi / Fantasy
+      <button class="filter-toggle filter-toggle--glint" id="genreToggle" type="button" aria-pressed="false">
+        Sci-fi / Fantasy&nbsp;<strong class="filter-toggle__state">OUT</strong>
+      </button>
+      <button class="filter-toggle" id="adsToggle" type="button" aria-pressed="true">
+        Ads&nbsp;<strong class="filter-toggle__state">IN</strong>
       </button>
     </div>
     <div class="filters" id="filters"></div>

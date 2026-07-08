@@ -11,7 +11,8 @@
     activeTools: new Set(),
     query: "",
     sortDir: "desc", // desc = más nuevo primero (lo último, arriba)
-    hideScifi: true, // por defecto sci-fi / fantasy EXCLUIDO
+    hideScifi: true, // por defecto sci-fi / fantasy EXCLUIDO (OUT)
+    hideAds: false, // por defecto ads INCLUIDOS (IN)
     filtered: [],
     rendered: 0,
   };
@@ -117,12 +118,20 @@
       genre.addEventListener("click", () => {
         state.hideScifi = !state.hideScifi;
         const included = !state.hideScifi;
-        // aria-pressed = true cuando sci-fi/fantasy está INCLUIDO (relleno dorado)
+        // aria-pressed / relleno dorado = INCLUIDO (IN)
         genre.setAttribute("aria-pressed", included ? "true" : "false");
-        // el verbo es la ACCIÓN disponible: si están excluidos -> "Incluir"
-        genre.querySelector(".genre-toggle__verb").textContent = state.hideScifi
-          ? "Incluir"
-          : "Excluir";
+        genre.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
+        render();
+      });
+    }
+
+    const ads = document.getElementById("adsToggle");
+    if (ads) {
+      ads.addEventListener("click", () => {
+        state.hideAds = !state.hideAds;
+        const included = !state.hideAds;
+        ads.setAttribute("aria-pressed", included ? "true" : "false");
+        ads.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
         render();
       });
     }
@@ -131,6 +140,8 @@
   function matches(v) {
     // Toggle sci-fi / fantasy
     if (state.hideScifi && v.scifiFantasy) return false;
+    // Toggle ads
+    if (state.hideAds && v.ads) return false;
     // Categorías: el vídeo debe tener TODAS las categorías activas
     for (const c of state.activeCats) {
       if (!(v.categories || []).includes(c)) return false;
