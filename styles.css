@@ -478,6 +478,7 @@ body {
   white-space: nowrap;
   color: var(--accent);
   font-weight: 800;
+  font-size: 200%; /* el doble que el resto de la meta */
 }
 
 .card__highlight {
