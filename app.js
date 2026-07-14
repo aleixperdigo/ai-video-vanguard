@@ -52,7 +52,7 @@
       if (data.meta?.title) els.title.textContent = data.meta.title;
       if (data.meta?.subtitle) els.subtitle.textContent = data.meta.subtitle;
     } catch (err) {
-      els.grid.innerHTML = `<div class="empty">No se pudo cargar videos.json — ${escapeHtml(
+      els.grid.innerHTML = `<div class="empty">Could not load videos.json — ${escapeHtml(
         err.message
       )}</div>`;
       return;
@@ -201,12 +201,12 @@
 
     const total = list.length + pinned.length;
     els.count.textContent = `${total}/${state.videos.length}`;
-    els.footCount.textContent = `${total} VÍDEOS`;
+    els.footCount.textContent = `${total} VIDEOS`;
 
     els.grid.innerHTML = "";
 
     if (!total) {
-      els.grid.innerHTML = `<div class="empty">Sin resultados con estos filtros</div>`;
+      els.grid.innerHTML = `<div class="empty">No results for these filters</div>`;
       return;
     }
 
@@ -239,7 +239,7 @@
       if (extraClass || era !== "now") {
         const head = document.createElement("div");
         head.className = "year-head" + (extraClass ? " year-head--pinned" : "");
-        head.textContent = extraClass ? (year === "S/F" ? "CLÁSICO" : year + " · el clásico") : year === "S/F" ? "SIN FECHA" : year;
+        head.textContent = extraClass ? (year === "S/F" ? "CLASSIC" : year + " · the classic") : year === "S/F" ? "NO DATE" : year;
         sect.appendChild(head);
       }
       const grid = document.createElement("div");
@@ -274,18 +274,18 @@
 
     img.src = `https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`;
     img.alt = v.title || "";
-    thumb.setAttribute("aria-label", `Reproducir: ${v.title || ""}`);
+    thumb.setAttribute("aria-label", `Play: ${v.title || ""}`);
     thumb.addEventListener("click", () => playInline(thumb, v.youtubeId));
 
     const dateBadge = node.querySelector(".thumb__date");
     if (v.date) {
       dateBadge.textContent = fmtDate(v.date);
     } else {
-      dateBadge.textContent = "FECHA S/D";
+      dateBadge.textContent = "NO DATE";
       dateBadge.classList.add("thumb__date--empty");
     }
 
-    node.querySelector(".card__title").textContent = v.title || "Sin título";
+    node.querySelector(".card__title").textContent = v.title || "Untitled";
     node.querySelector(".card__dir").textContent = v.director || "—";
     node.querySelector(".card__date").textContent = fmtDate(v.date);
 
@@ -323,7 +323,7 @@
       link.href = v.source;
       link.target = "_blank";
       link.rel = "noopener";
-      link.textContent = "VER FUENTE ↗";
+      link.textContent = "VIEW SOURCE ↗";
       body.appendChild(link);
     }
 
@@ -331,7 +331,7 @@
     const like = document.createElement("button");
     like.className = "card__like";
     like.type = "button";
-    like.setAttribute("aria-label", "Me gusta");
+    like.setAttribute("aria-label", "Like");
     like.innerHTML =
       '<svg class="card__like-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-10-9.2C.4 8.6 1.9 5 5.4 5c2 0 3.4 1.1 4.6 2.6C11.2 6.1 12.6 5 14.6 5 18.1 5 19.6 8.6 22 11.8 19.5 16.4 12 21 12 21z"/></svg>' +
       '<span class="card__like-count">' + getLikes(v.id) + "</span>";

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Video References</title>
+  <title>AI Video Vanguard</title>
   <link rel="preconnect" href="https://i.ytimg.com" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" />
   <link rel="stylesheet" href="styles.css" />
@@ -11,42 +11,42 @@
 <body>
   <header class="masthead">
     <div class="masthead__row">
-      <h1 class="logo" id="siteTitle">REPOSITORIO DE VÍDEO IA</h1>
+      <h1 class="logo" id="siteTitle">AI VIDEO VANGUARD</h1>
       <span class="count" id="count">—</span>
     </div>
     <div class="feednote">
       <span class="feednote__pulse" aria-hidden="true"></span>
-      <span id="siteSubtitle">Lo último, arriba · feed infinito ordenado por fecha de subida</span>
+      <span id="siteSubtitle">Latest on top · feed ordered by publish date</span>
     </div>
 
     <details class="about">
       <summary class="about__btn">
-        <span class="about__btn-open">¿QUÉ ES ESTO? +</span>
-        <span class="about__btn-close">CERRAR −</span>
+        <span class="about__btn-open">WHAT IS THIS? +</span>
+        <span class="about__btn-close">CLOSE −</span>
       </summary>
       <div class="about__body">
-        <p>Repositorio vivo de referencias de vídeo hecho con IA. Mantenido por <strong>Aleix Perdigó</strong>.</p>
-        <p>El vídeo IA avanza rápido. El criterio sobre lo que puede o no puede hacer suele basarse en referencias de hace meses.</p>
-        <p>Aquí solo entran piezas recientes, ordenadas por fecha: <strong>lo último, arriba</strong>. Para evaluar la IA por lo que hace hoy, no por lo que hacía el trimestre pasado.</p>
-        <p class="about__cta">¿Falta una referencia reciente? → <a href="mailto:aleix.perdigo@goroka.tv">aleix.perdigo@goroka.tv</a></p>
+        <p>A living repository of AI-made video references. Maintained by <strong>Aleix Perdigó</strong>.</p>
+        <p>AI video moves fast. Our sense of what it can and can't do is usually built on references that are already months old.</p>
+        <p>Only recent pieces make it in here, ordered by date: <strong>latest on top</strong>. So you judge AI by what it does today, not by what it did last quarter.</p>
+        <p class="about__cta">Spotted a recent reference that belongs here? → <a href="mailto:aleix.perdigo@goroka.tv">aleix.perdigo@goroka.tv</a></p>
       </div>
     </details>
   </header>
 
-  <nav class="controls" aria-label="Filtros">
-    <div class="view-seg" id="viewSeg" role="group" aria-label="Referencias por fila">
-      <button class="view-seg__btn" data-cols="1" type="button" aria-pressed="false" title="1 por fila" aria-label="1 por fila">
+  <nav class="controls" aria-label="Filters">
+    <div class="view-seg" id="viewSeg" role="group" aria-label="References per row">
+      <button class="view-seg__btn" data-cols="1" type="button" aria-pressed="false" title="1 per row" aria-label="1 per row">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
           <rect x="4" y="4" width="16" height="16" rx="1.5" />
         </svg>
       </button>
-      <button class="view-seg__btn" data-cols="2" type="button" aria-pressed="true" title="2 por fila" aria-label="2 por fila">
+      <button class="view-seg__btn" data-cols="2" type="button" aria-pressed="true" title="2 per row" aria-label="2 per row">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
           <rect x="3.5" y="4" width="7.5" height="16" rx="1.5" />
           <rect x="13" y="4" width="7.5" height="16" rx="1.5" />
         </svg>
       </button>
-      <button class="view-seg__btn" data-cols="4" type="button" aria-pressed="false" title="4 por fila" aria-label="4 por fila">
+      <button class="view-seg__btn" data-cols="4" type="button" aria-pressed="false" title="4 per row" aria-label="4 per row">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
           <rect x="3" y="4" width="3.3" height="16" rx="1" />
           <rect x="7.7" y="4" width="3.3" height="16" rx="1" />
@@ -72,12 +72,12 @@
 
   <footer class="foot">
     <span id="footCount">—</span>
-    <span>· estático · embeds de YouTube · sin backend</span>
+    <span>· static · YouTube embeds · no backend</span>
   </footer>
 
   <template id="cardTpl">
     <article class="card">
-      <button class="thumb" type="button" aria-label="Reproducir vídeo">
+      <button class="thumb" type="button" aria-label="Play video">
         <img class="thumb__img" loading="lazy" alt="" />
         <span class="thumb__date" aria-hidden="true"></span>
         <span class="thumb__play" aria-hidden="true">▶</span>
@@ -98,8 +98,7 @@
 
   <script src="app.js"></script>
 
-  <!-- GoatCounter — analítica sin cookies. Cableado al account name "goroka".
-       Si al registrarte tuviste que usar otro nombre, cámbialo aquí. -->
+  <!-- GoatCounter — cookieless analytics, wired to the "goroka" account name. -->
   <script
     data-goatcounter="https://goroka.goatcounter.com/count"
     async

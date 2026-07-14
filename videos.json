@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "REPOSITORIO DE VÍDEO IA",
-    "subtitle": "Lo último, arriba · feed infinito ordenado por fecha de subida"
+    "title": "AI VIDEO VANGUARD",
+    "subtitle": "Latest on top · feed ordered by publish date"
   },
   "categories": [
-    "Consistencia de personaje",
+    "Character consistency",
     "Lipsync",
-    "Movimiento de cámara",
+    "Camera movement",
     "VFX",
-    "Coherencia temporal",
-    "Fotorrealismo",
-    "Estética / Arte",
-    "Transiciones",
-    "Narrativa",
+    "Temporal coherence",
+    "Photorealism",
+    "Aesthetics / Art",
+    "Transitions",
+    "Narrative",
     "Worldbuilding"
   ],
   "videos": [
@@ -25,14 +25,14 @@
       "tool": "Dreamina",
       "date": "2026-06-05",
       "categories": [
-        "Fotorrealismo",
+        "Photorealism",
         "VFX",
         "Worldbuilding",
-        "Movimiento de cámara",
-        "Narrativa"
+        "Camera movement",
+        "Narrative"
       ],
-      "highlight": "Hecho por 3 personas en 2 semanas",
-      "description": "Teaser de largometraje híbrido. Modelos: Octo + Seedance 2.0. Equipo: PJ Ace, Dan Weller, Karim Youssef, Stephen Quach.",
+      "highlight": "Made by 3 people in 2 weeks",
+      "description": "Teaser for a hybrid feature film. Models: Octo + Seedance 2.0. Team: PJ Ace, Dan Weller, Karim Youssef, Stephen Quach.",
       "source": "https://www.youtube.com/watch?v=MsREdHXtdWM"
     },
     {
@@ -45,14 +45,14 @@
       "tool": "Veo",
       "date": "2026-06-03",
       "categories": [
-        "Narrativa",
-        "Consistencia de personaje",
-        "Estética / Arte",
-        "Fotorrealismo",
-        "Coherencia temporal"
+        "Narrative",
+        "Character consistency",
+        "Aesthetics / Art",
+        "Photorealism",
+        "Temporal coherence"
       ],
-      "highlight": "Primer Filmmaker in Residence de Google Flow",
-      "description": "EP1 de una serie de 2 episodios (~16 min) ambientada en los 80: Artie, un adolescente obsesionado con VHS y cine de samuráis. Hecho con Google Flow (Veo + Nano Banana).",
+      "highlight": "Google Flow's first Filmmaker in Residence",
+      "description": "EP1 of a two-episode series (~16 min) set in the 80s: Artie, a teenager obsessed with VHS tapes and samurai movies. Made with Google Flow (Veo + Nano Banana).",
       "source": "https://www.youtube.com/watch?v=hR5SLjOsnj4"
     },
     {
@@ -64,13 +64,13 @@
       "tool": "Runway",
       "date": "2026-06-17",
       "categories": [
-        "Narrativa",
-        "Estética / Arte",
-        "Fotorrealismo",
-        "Coherencia temporal"
+        "Narrative",
+        "Aesthetics / Art",
+        "Photorealism",
+        "Temporal coherence"
       ],
-      "highlight": "Gran Premio — Runway Big Ad Contest",
-      "description": "Anuncio ganador del Gran Premio del Runway Big Ad Contest (productos que no existen).",
+      "highlight": "Grand Prize — Runway Big Ad Contest",
+      "description": "Grand Prize winner of the Runway Big Ad Contest (products that don't exist).",
       "source": "https://www.youtube.com/watch?v=wDfhWrKExJ4"
     },
     {
@@ -81,13 +81,13 @@
       "tool": "Kling",
       "date": "2026-05-12",
       "categories": [
-        "Fotorrealismo",
-        "Movimiento de cámara",
-        "Estética / Arte",
-        "Coherencia temporal"
+        "Photorealism",
+        "Camera movement",
+        "Aesthetics / Art",
+        "Temporal coherence"
       ],
-      "highlight": "Test de paisaje en 4K",
-      "description": "Prueba de capacidades de Kling: paisajes de Marruecos en 4K.",
+      "highlight": "4K landscape test",
+      "description": "Kling capability test: Moroccan landscapes in 4K.",
       "source": "https://www.youtube.com/watch?v=bc4xROkyGr8"
     },
     {
@@ -98,13 +98,13 @@
       "tool": "",
       "date": "2026-06-21",
       "categories": [
-        "Consistencia de personaje",
-        "Narrativa",
-        "Fotorrealismo",
-        "Estética / Arte"
+        "Character consistency",
+        "Narrative",
+        "Photorealism",
+        "Aesthetics / Art"
       ],
-      "highlight": "De un retrato familiar a vídeo",
-      "description": "Pieza personal: Dave Clark anima un retrato familiar como homenaje a su padre. Herramienta por confirmar.",
+      "highlight": "From a family portrait to video",
+      "description": "Personal piece: Dave Clark animates a family portrait as a tribute to his father. Tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=DDmnoipFOpY"
     },
     {
@@ -115,10 +115,10 @@
       "tool": "",
       "date": "2026-07-07",
       "categories": [
-        "Narrativa"
+        "Narrative"
       ],
       "highlight": "",
-      "description": "Cortometraje de Jordan Daniel Chesney (JDC Entertainment), estudio de cine con IA generativa. Herramienta, fecha y categorías por confirmar.",
+      "description": "Short film by Jordan Daniel Chesney (JDC Entertainment), a generative-AI film studio. Tool and categories unconfirmed.",
       "source": "https://www.youtube.com/watch?v=iapXQ-Y36sI"
     },
     {
@@ -130,12 +130,12 @@
       "tool": "Higgsfield",
       "date": "2026-06-24",
       "categories": [
-        "Estética / Arte",
+        "Aesthetics / Art",
         "Worldbuilding",
-        "Narrativa"
+        "Narrative"
       ],
-      "highlight": "Higgsfield Original · corto de animación",
-      "description": "Teaser oficial de un cortometraje de animación (2026). Producido por Higgsfield AI. Fecha exacta por confirmar.",
+      "highlight": "Higgsfield Original · animated short",
+      "description": "Official teaser for an animated short (2026). Produced by Higgsfield AI.",
       "source": "https://www.youtube.com/watch?v=BwVG_n9-jz4"
     },
     {
@@ -146,13 +146,13 @@
       "tool": "Higgsfield",
       "date": "2026-04-10",
       "categories": [
-        "Narrativa",
+        "Narrative",
         "Worldbuilding",
-        "Consistencia de personaje",
-        "Estética / Arte"
+        "Character consistency",
+        "Aesthetics / Art"
       ],
       "highlight": "Higgsfield Original Series · EP1",
-      "description": "Primer episodio de una serie original de Higgsfield AI (2026). Fecha exacta por confirmar.",
+      "description": "First episode of an original series by Higgsfield AI (2026).",
       "source": "https://www.youtube.com/watch?v=LQ-vSa9_H98"
     },
     {
@@ -164,14 +164,14 @@
       "tool": "Higgsfield",
       "date": "2026-04-20",
       "categories": [
-        "Narrativa",
-        "Consistencia de personaje",
-        "Movimiento de cámara",
+        "Narrative",
+        "Character consistency",
+        "Camera movement",
         "Worldbuilding",
-        "Fotorrealismo"
+        "Photorealism"
       ],
-      "highlight": "Higgsfield Original Series · acción vikinga",
-      "description": "Serie de acción episódica (~22 min) de Higgsfield AI, 4K. Producida con Seedance 2.0. Fecha exacta por confirmar.",
+      "highlight": "Higgsfield Original Series · viking action",
+      "description": "Episodic action series (~22 min) by Higgsfield AI, in 4K. Produced with Seedance 2.0.",
       "source": "https://www.youtube.com/watch?v=F6MgT_Bdgz8"
     },
     {
@@ -184,13 +184,13 @@
       "date": "2026-02-23",
       "categories": [
         "Worldbuilding",
-        "Fotorrealismo",
-        "Estética / Arte",
-        "Coherencia temporal",
-        "Consistencia de personaje"
+        "Photorealism",
+        "Aesthetics / Art",
+        "Temporal coherence",
+        "Character consistency"
       ],
-      "highlight": "La luz como personaje · Runway Gen-4",
-      "description": "Cortometraje oficial de Runway Studios con Gen-4. Worldbuilding y consistencia de entorno en un paisaje alienígena.",
+      "highlight": "Light as a character · Runway Gen-4",
+      "description": "Official Runway Studios short made with Gen-4. Worldbuilding and environment consistency in an alien landscape.",
       "source": "https://www.youtube.com/watch?v=BwoCznxxMBw"
     },
     {
@@ -203,13 +203,13 @@
       "date": "2026-04-07",
       "categories": [
         "Worldbuilding",
-        "Consistencia de personaje",
-        "Narrativa",
-        "Estética / Arte",
-        "Fotorrealismo"
+        "Character consistency",
+        "Narrative",
+        "Aesthetics / Art",
+        "Photorealism"
       ],
-      "highlight": "Serie original de fantasía IA (Freepik)",
-      "description": "Prólogo de una serie de fantasía serializada. Producido con la suite de Freepik/Magnific (rutea Kling/Veo/Seedance por plano). Fecha exacta por confirmar.",
+      "highlight": "Original AI fantasy series (Freepik)",
+      "description": "Prologue of a serialized fantasy series. Produced with the Freepik/Magnific suite (routes Kling/Veo/Seedance per shot).",
       "source": "https://www.youtube.com/watch?v=6whZssGM4cw"
     },
     {
@@ -221,12 +221,12 @@
       "date": "2026-04-03",
       "categories": [
         "Lipsync",
-        "Consistencia de personaje",
-        "Fotorrealismo",
-        "Narrativa"
+        "Character consistency",
+        "Photorealism",
+        "Narrative"
       ],
-      "highlight": "Actuación facial + audio sincronizado",
-      "description": "Exploración de Seedance 2.0 (Dreamina) en 4K: drama de diálogo cara a cara con lipsync y actuación facial. Destacado por Curious Refuge. Fecha exacta por confirmar.",
+      "highlight": "Facial performance + synced audio",
+      "description": "A Seedance 2.0 (Dreamina) exploration in 4K: face-to-face dialogue drama with lipsync and facial acting. Featured by Curious Refuge.",
       "source": "https://www.youtube.com/watch?v=BGo578sWCGw"
     },
     {
@@ -237,10 +237,10 @@
       "tool": "",
       "date": "2026-06-18",
       "categories": [
-        "Estética / Arte"
+        "Aesthetics / Art"
       ],
       "highlight": "",
-      "description": "Pieza de László Gaál (color + IA generativa). Herramienta, fecha y categorías por confirmar.",
+      "description": "Piece by László Gaál (colour grading + generative AI). Tool and categories unconfirmed.",
       "source": "https://www.youtube.com/watch?v=DXTv_l056x8"
     },
     {
@@ -251,12 +251,12 @@
       "tool": "Runway",
       "date": "2026-03-30",
       "categories": [
-        "Narrativa",
-        "Estética / Arte"
+        "Narrative",
+        "Aesthetics / Art"
       ],
       "ads": true,
       "highlight": "Spec ad · Runway Big Ad Contest 2026",
-      "description": "Anuncio de producto ficticio (brief de pilas) de la Runway Big Ad Contest 2026. Runway Gen-4.",
+      "description": "Fictional-product ad (battery brief) from the Runway Big Ad Contest 2026. Runway Gen-4.",
       "source": "https://www.youtube.com/watch?v=DMHt1dW7eHA"
     },
     {
@@ -267,12 +267,12 @@
       "tool": "Runway",
       "date": "2026-05-20",
       "categories": [
-        "Narrativa",
-        "Estética / Arte"
+        "Narrative",
+        "Aesthetics / Art"
       ],
       "ads": true,
-      "highlight": "Ganador · Runway Big Ad Contest 2026",
-      "description": "Spec ad premiado de la Runway Big Ad Contest 2026. Runway Gen-4.",
+      "highlight": "Winner · Runway Big Ad Contest 2026",
+      "description": "Award-winning spec ad from the Runway Big Ad Contest 2026. Runway Gen-4.",
       "source": "https://www.youtube.com/watch?v=NZsXUk04JIU"
     },
     {
@@ -283,12 +283,12 @@
       "tool": "Runway",
       "date": "2026-03-31",
       "categories": [
-        "Narrativa",
-        "Estética / Arte"
+        "Narrative",
+        "Aesthetics / Art"
       ],
       "ads": true,
       "highlight": "Spec ad · Runway Big Ad Contest 2026",
-      "description": "Anuncio de producto ficticio 'Snooze Patch' enviado a la Runway Big Ad Contest 2026.",
+      "description": "Fictional-product ad 'Snooze Patch' submitted to the Runway Big Ad Contest 2026.",
       "source": "https://www.youtube.com/watch?v=ViNy3bj-p7k"
     },
     {
@@ -299,12 +299,12 @@
       "tool": "Sora",
       "date": "2024-05-02",
       "categories": [
-        "Transiciones",
-        "Estética / Arte",
-        "Narrativa"
+        "Transitions",
+        "Aesthetics / Art",
+        "Narrative"
       ],
-      "highlight": "Primer videoclip oficial hecho con Sora",
-      "description": "Videoclip oficial de Washed Out dirigido por Paul Trillo; transiciones de zoom infinito continuo. Primer videoclip comisionado con Sora.",
+      "highlight": "First official music video made with Sora",
+      "description": "Official Washed Out music video directed by Paul Trillo; continuous infinite-zoom transitions. The first music video commissioned with Sora.",
       "source": "https://www.youtube.com/watch?v=-Nb-M1GAOX8"
     },
     {
@@ -315,11 +315,11 @@
       "tool": "Runway",
       "date": "2023-10-21",
       "categories": [
-        "Consistencia de personaje",
-        "Narrativa"
+        "Character consistency",
+        "Narrative"
       ],
       "highlight": "Runway Gen:48 · Best Character (2023)",
-      "description": "Cortometraje ganador de 'Best Character' en el Runway Gen:48 (2023).",
+      "description": "Short film that won 'Best Character' at Runway Gen:48 (2023).",
       "source": "https://www.youtube.com/watch?v=7K65pYWa220"
     },
     {
@@ -330,11 +330,11 @@
       "tool": "Luma",
       "date": "2024-07-12",
       "categories": [
-        "Narrativa",
-        "Estética / Arte"
+        "Narrative",
+        "Aesthetics / Art"
       ],
-      "highlight": "Corto IA (Midjourney + Luma Dream Machine)",
-      "description": "Cortometraje de oficina con 'marionetas'. Imágenes en Midjourney, vídeo en Luma Dream Machine.",
+      "highlight": "AI short (Midjourney + Luma Dream Machine)",
+      "description": "Office short with 'puppets'. Stills in Midjourney, video in Luma Dream Machine.",
       "source": "https://www.youtube.com/watch?v=t_SgA6ymPuc"
     },
     {
@@ -345,13 +345,13 @@
       "tool": "Veo",
       "date": "2025-01-20",
       "categories": [
-        "Fotorrealismo",
-        "Movimiento de cámara",
-        "Estética / Arte"
+        "Photorealism",
+        "Camera movement",
+        "Aesthetics / Art"
       ],
       "ads": true,
-      "highlight": "Spec ad Porsche · viral (Veo 2, 2025)",
-      "description": "Spec ad no oficial de Porsche por László Gaál, viral en enero 2025. Google Veo 2.",
+      "highlight": "Porsche spec ad · viral (Veo 2, 2025)",
+      "description": "Unofficial Porsche spec ad by László Gaál, viral in January 2025. Google Veo 2.",
       "source": "https://www.youtube.com/watch?v=VqLWWYfCEbI"
     },
     {
@@ -362,12 +362,12 @@
       "tool": "",
       "date": "2025-11-03",
       "categories": [
-        "Fotorrealismo",
-        "Estética / Arte"
+        "Photorealism",
+        "Aesthetics / Art"
       ],
       "ads": true,
-      "highlight": "Anuncio de marca real hecho con IA (polémico)",
-      "description": "Anuncio navideño oficial de Coca-Cola generado con IA (varios estudios: Secret Level, Silverside, Wild Card). Herramienta única sin confirmar.",
+      "highlight": "Real brand ad made with AI (controversial)",
+      "description": "Official Coca-Cola holiday ad generated with AI (several studios: Secret Level, Silverside, Wild Card). Single tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=Yy6fByUmPuE"
     },
     {
@@ -379,8 +379,8 @@
       "date": "2023-04-01",
       "categories": [],
       "pinBottom": true,
-      "highlight": "El punto de partida (2023)",
-      "description": "El meme fundacional del vídeo IA. Aquí como referencia de 'de dónde venimos'. No es un anuncio.",
+      "highlight": "The starting point (2023)",
+      "description": "The foundational AI-video meme. Kept here as a reference for where we came from. Not an ad.",
       "source": "https://www.youtube.com/watch?v=XQr4Xklqzw8"
     },
     {
@@ -391,13 +391,13 @@
       "tool": "",
       "date": "2026-05-27",
       "categories": [
-        "Fotorrealismo",
-        "Narrativa",
-        "Coherencia temporal",
-        "Movimiento de cámara"
+        "Photorealism",
+        "Narrative",
+        "Temporal coherence",
+        "Camera movement"
       ],
-      "highlight": "Tráiler de corto IA (4K)",
-      "description": "Tráiler de cortometraje ambientado en la Alemania del Este de 1979: una estación de vigilancia militar intercepta una señal alienígena. Herramienta por confirmar.",
+      "highlight": "AI short trailer (4K)",
+      "description": "Trailer for a short film set in 1979 East Germany: a remote military surveillance station intercepts an alien signal. Tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=IfScba6NElY"
     },
     {
@@ -410,12 +410,12 @@
       "date": "2025-08-25",
       "categories": [
         "Lipsync",
-        "Consistencia de personaje",
-        "Narrativa",
-        "Estética / Arte"
+        "Character consistency",
+        "Narrative",
+        "Aesthetics / Art"
       ],
-      "highlight": "Mejor Animación · GEN:48 Aleph",
-      "description": "Corto animado con IA en 48h para el reto GEN:48 Aleph de Runway; secuencia dialogada muy emotiva. Ganó Mejor Animación en los Bionic Awards.",
+      "highlight": "Best Animation · GEN:48 Aleph",
+      "description": "AI-animated short made in 48h for Runway's GEN:48 Aleph challenge; a deeply emotional dialogue sequence. Won Best Animation at the Bionic Awards.",
       "source": "https://www.youtube.com/watch?v=e2tY04HKnTc"
     },
     {
@@ -427,13 +427,13 @@
       "date": "2026-02-02",
       "scifiFantasy": true,
       "categories": [
-        "Consistencia de personaje",
-        "Movimiento de cámara",
-        "Estética / Arte",
+        "Character consistency",
+        "Camera movement",
+        "Aesthetics / Art",
         "Worldbuilding"
       ],
-      "highlight": "Western + ciencia ficción",
-      "description": "Teaser conceptual sin diálogos que hibrida western y sci-fi en torno a un forastero alienígena; estética 'Anirreal' de texturas hiperrealistas.",
+      "highlight": "Western + science fiction",
+      "description": "Dialogue-free concept teaser blending western and sci-fi around an alien stranger; 'Anirreal' aesthetic with hyperrealistic textures.",
       "source": "https://www.youtube.com/watch?v=SHfdJY-WWOg"
     },
     {
@@ -444,13 +444,13 @@
       "tool": "Seedance",
       "date": "2026-04-02",
       "categories": [
-        "Fotorrealismo",
-        "Movimiento de cámara",
-        "Coherencia temporal",
+        "Photorealism",
+        "Camera movement",
+        "Temporal coherence",
         "VFX"
       ],
-      "highlight": "Demo Seedance 2.0 · AI on the Lot",
-      "description": "Cortometraje de demostración generado íntegramente con Seedance 2.0, presentado en el evento AI on the Lot.",
+      "highlight": "Seedance 2.0 demo · AI on the Lot",
+      "description": "Demo short generated entirely with Seedance 2.0, presented at the AI on the Lot event.",
       "source": "https://www.youtube.com/watch?v=xiIW1NFTabA"
     },
     {
@@ -462,13 +462,13 @@
       "date": "2026-01-06",
       "scifiFantasy": true,
       "categories": [
-        "Fotorrealismo",
+        "Photorealism",
         "Worldbuilding",
-        "Consistencia de personaje",
+        "Character consistency",
         "VFX"
       ],
-      "highlight": "Tráiler live-action ficticio · hecho en 5 días",
-      "description": "Tráiler ficticio (clasificación R) de una película live-action de The Legend of Zelda: Breath of the Wild, hecho en cinco días con la suite de Freepik.",
+      "highlight": "Fictional live-action trailer · made in 5 days",
+      "description": "Fictional R-rated trailer for a live-action The Legend of Zelda: Breath of the Wild movie, made in five days with the Freepik suite.",
       "source": "https://www.youtube.com/watch?v=v0N0wAqqXJ8"
     },
     {
@@ -480,13 +480,13 @@
       "date": "2025-06-11",
       "ads": true,
       "categories": [
-        "Fotorrealismo",
+        "Photorealism",
         "VFX",
-        "Narrativa",
-        "Coherencia temporal"
+        "Narrative",
+        "Temporal coherence"
       ],
-      "highlight": "Anuncio viral · emitido en las Finales NBA",
-      "description": "Anuncio de Kalshi generado con IA (Google Veo 3), escenas caóticas estilo GTA, emitido durante las Finales de la NBA.",
+      "highlight": "Viral ad · aired during the NBA Finals",
+      "description": "Kalshi ad generated with AI (Google Veo 3), chaotic GTA-style scenes, aired during the NBA Finals.",
       "source": "https://www.youtube.com/watch?v=-QMftwmyW-A"
     },
     {
@@ -498,12 +498,12 @@
       "tool": "",
       "date": "2026-06-17",
       "categories": [
-        "Fotorrealismo",
-        "Narrativa",
-        "Movimiento de cámara"
+        "Photorealism",
+        "Narrative",
+        "Camera movement"
       ],
       "highlight": "",
-      "description": "Pieza cinematográfica IA sobre el Mundial 2026. Herramienta por confirmar.",
+      "description": "AI cinematic piece about the 2026 World Cup. Tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=7RogQiih3M8"
     },
     {
@@ -515,12 +515,12 @@
       "tool": "",
       "date": "2026-04-03",
       "categories": [
-        "Fotorrealismo",
-        "Narrativa",
-        "Consistencia de personaje"
+        "Photorealism",
+        "Narrative",
+        "Character consistency"
       ],
-      "highlight": "Ibai, elXokas y TheGrefg",
-      "description": "Cinematic IA estilo survival con streamers españoles (Ibai, elXokas, TheGrefg) luchando por sobrevivir. Herramienta por confirmar.",
+      "highlight": "Ibai, elXokas & TheGrefg",
+      "description": "Survival-style AI cinematic with Spanish streamers (Ibai, elXokas, TheGrefg) fighting to stay alive. Tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=JWiSiDX4oBE"
     },
     {
@@ -532,12 +532,12 @@
       "tool": "",
       "date": "2026-04-30",
       "categories": [
-        "Narrativa",
-        "Estética / Arte",
-        "Fotorrealismo"
+        "Narrative",
+        "Aesthetics / Art",
+        "Photorealism"
       ],
       "highlight": "",
-      "description": "Cortometraje de ficción de Dorian & Daniel. Herramienta por confirmar.",
+      "description": "Fiction short film by Dorian & Daniel. Tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=eoZyWHLHHLY"
     }
   ]
