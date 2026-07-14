@@ -522,6 +522,23 @@
       "highlight": "Ibai, elXokas y TheGrefg",
       "description": "Cinematic IA estilo survival con streamers españoles (Ibai, elXokas, TheGrefg) luchando por sobrevivir. Herramienta por confirmar.",
       "source": "https://www.youtube.com/watch?v=JWiSiDX4oBE"
+    },
+    {
+      "id": "the-well-dorian-daniel",
+      "youtubeId": "eoZyWHLHHLY",
+      "scifiFantasy": true,
+      "title": "The Well",
+      "director": "Dorian & Daniel",
+      "tool": "",
+      "date": "2026-04-30",
+      "categories": [
+        "Narrativa",
+        "Estética / Arte",
+        "Fotorrealismo"
+      ],
+      "highlight": "",
+      "description": "Cortometraje de ficción de Dorian & Daniel. Herramienta por confirmar.",
+      "source": "https://www.youtube.com/watch?v=eoZyWHLHHLY"
     }
   ]
 }
