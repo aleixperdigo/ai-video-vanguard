@@ -103,6 +103,26 @@
     // Orden: SIEMPRE por fecha, lo más nuevo arriba (regla fija). Sin botón.
     // (El orden por likes queda latente; ver LIKES_ENABLED.)
 
+    // Switcher FLASHY / DRY (el modo de carga lo decide el script inline del <head>)
+    const modeBtn = document.getElementById("modeSwitch");
+    if (modeBtn) {
+      const syncModeBtn = () => {
+        const m = document.documentElement.classList.contains("mode-dry") ? "DRY" : "FLASHY";
+        modeBtn.querySelector(".mode-switch__label").textContent = m;
+      };
+      syncModeBtn();
+      modeBtn.addEventListener("click", () => {
+        const root = document.documentElement;
+        const toDry = !root.classList.contains("mode-dry");
+        root.classList.toggle("mode-dry", toDry);
+        root.classList.toggle("mode-flashy", !toDry);
+        try {
+          localStorage.setItem("vanguardMode", toDry ? "dry" : "flashy");
+        } catch (e) {}
+        syncModeBtn();
+      });
+    }
+
     const seg = document.getElementById("viewSeg");
     if (seg) {
       seg.addEventListener("click", (e) => {

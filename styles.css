@@ -198,6 +198,58 @@ body {
   .filter-toggle--glint { animation: none; }
 }
 
+/* ---------- Modos FLASHY / DRY (se alternan en cada carga) ---------- */
+.controls__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mode-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  border: 2px solid var(--line);
+  color: var(--dim);
+  padding: 8px 12px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.mode-switch:hover { color: var(--ink); border-color: var(--ink); }
+.mode-switch:active { transform: translate(1px, 1px); }
+.mode-switch__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: none;
+}
+
+/* DRY: acentos neutros, cero animaciones, hovers planos */
+html.mode-dry {
+  --accent: #e2e2e2;
+  --accent2: #8f8f8f;
+}
+html.mode-dry .feednote__pulse,
+html.mode-dry .filter-toggle--glint,
+html.mode-dry .thumb__date {
+  animation: none !important;
+  box-shadow: none;
+}
+html.mode-dry .card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--ink);
+}
+html.mode-dry .thumb:hover .thumb__img {
+  transform: none;
+  filter: grayscale(0.2) contrast(1.05);
+}
+
 /* ---------- Controls (sticky arriba) ---------- */
 .controls {
   position: sticky;
