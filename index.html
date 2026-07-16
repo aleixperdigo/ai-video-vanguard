@@ -4,22 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI Video Vanguard</title>
-  <script>
-    // Modo FLASHY / DRY: se alternan 1 a 1 en cada carga (sin default).
-    (function () {
-      var m;
-      try {
-        var last = localStorage.getItem("vanguardMode");
-        if (last === "flashy") m = "dry";
-        else if (last === "dry") m = "flashy";
-        else m = Math.random() < 0.5 ? "flashy" : "dry"; // primera visita: aleatorio
-        localStorage.setItem("vanguardMode", m);
-      } catch (e) {
-        m = "flashy";
-      }
-      document.documentElement.classList.add("mode-" + m);
-    })();
-  </script>
   <link rel="preconnect" href="https://i.ytimg.com" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" />
   <link rel="stylesheet" href="styles.css" />
@@ -50,12 +34,7 @@
   </header>
 
   <nav class="controls" aria-label="Filters">
-    <div class="controls__right">
-      <button class="mode-switch" id="modeSwitch" type="button" title="Switch mode">
-        <span class="mode-switch__dot" aria-hidden="true"></span>
-        <span class="mode-switch__label">FLASHY</span>
-      </button>
-      <div class="view-seg" id="viewSeg" role="group" aria-label="References per row">
+    <div class="view-seg" id="viewSeg" role="group" aria-label="References per row">
       <button class="view-seg__btn" data-cols="1" type="button" aria-pressed="false" title="1 per row" aria-label="1 per row">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
           <rect x="4" y="4" width="16" height="16" rx="1.5" />
@@ -75,7 +54,6 @@
           <rect x="17.1" y="4" width="3.3" height="16" rx="1" />
         </svg>
       </button>
-      </div>
     </div>
     <div class="genre-row">
       <button class="filter-toggle filter-toggle--glint" id="genreToggle" type="button" aria-pressed="false">
