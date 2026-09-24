@@ -57,7 +57,8 @@
           "label": "Context: Critterz feature at Cannes",
           "url": "https://deadline.com/2026/05/open-ai-produced-animated-family-film-critterz-cannes-1236879586/"
         }
-      ]
+      ],
+      "cartoon": true
     },
     {
       "id": "fruit-love-island",
@@ -81,7 +82,8 @@
           "label": "Context: AI fruit short dramas",
           "url": "https://baike.baidu.com/en/item/AI%20Fruit%20Short%20Drama/3428414"
         }
-      ]
+      ],
+      "cartoon": true
     },
     {
       "id": "cruise-pitt-seedance-robinson",
@@ -121,12 +123,12 @@
       "categories": [
         "Narrative",
         "Worldbuilding",
-        "Character consistency"
+        "Character consistency",
+        "Photorealism"
       ],
       "highlight": "Higgsfield Global Film Festival 2026 · entry",
       "description": "Paris has fallen silent and nature is taking the city back. A municipal service robot keeps cleaning the streets long after civilization is gone, until something starts following him.",
-      "source": "https://www.youtube.com/watch?v=A14HI1p3Dyo",
-      "cartoon": true
+      "source": "https://www.youtube.com/watch?v=A14HI1p3Dyo"
     },
     {
       "id": "still-bluehorizon",
@@ -596,7 +598,8 @@
       ],
       "highlight": "AI short (Midjourney + Luma Dream Machine)",
       "description": "Office short with 'puppets'. Stills in Midjourney, video in Luma Dream Machine.",
-      "source": "https://www.youtube.com/watch?v=t_SgA6ymPuc"
+      "source": "https://www.youtube.com/watch?v=t_SgA6ymPuc",
+      "cartoon": true
     },
     {
       "id": "pisanos-porsche",
@@ -659,7 +662,8 @@
       ],
       "highlight": "AI short trailer (4K)",
       "description": "Trailer for a short film set in 1979 East Germany: a remote military surveillance station intercepts an alien signal. Tool unconfirmed.",
-      "source": "https://www.youtube.com/watch?v=IfScba6NElY"
+      "source": "https://www.youtube.com/watch?v=IfScba6NElY",
+      "scifiFantasy": true
     },
     {
       "id": "ausencia-gen48",
@@ -782,7 +786,8 @@
       ],
       "highlight": "Ibai, elXokas & TheGrefg",
       "description": "Survival-style AI cinematic with Spanish streamers (Ibai, elXokas, TheGrefg) fighting to stay alive. Tool unconfirmed.",
-      "source": "https://www.youtube.com/watch?v=JWiSiDX4oBE"
+      "source": "https://www.youtube.com/watch?v=JWiSiDX4oBE",
+      "ads": true
     },
     {
       "id": "the-well-dorian-daniel",
