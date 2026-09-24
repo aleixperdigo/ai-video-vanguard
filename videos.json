@@ -810,6 +810,108 @@
           "url": "https://aif.runwayml.com/"
         }
       ]
+    },
+    {
+      "id": "coca-cola-uncanned-emotions-wc26",
+      "youtubeId": "jNHDWcoNzVA",
+      "ads": true,
+      "scifiFantasy": false,
+      "title": "Coca-Cola — Uncanned Emotions (FIFA World Cup 2026)",
+      "director": "Coca-Cola",
+      "tool": "",
+      "date": "2026-04-08",
+      "categories": [
+        "Photorealism",
+        "VFX"
+      ],
+      "highlight": "World Cup 2026 · criticized for its AI shots",
+      "description": "Official sponsor spot voiced by commentators Peter Drury (EN) and Luis Omar Tapia (ES). Instead of football, a series of AI shots of Coca-Cola cans being tapped, opened, thrown and spilled. Critics called it flat and generic: a case study of AI as a production shortcut rather than an idea.",
+      "source": "https://www.youtube.com/watch?v=jNHDWcoNzVA",
+      "links": [
+        {
+          "label": "Review: Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/the-good-the-bad-and-the-ai-of-world-cup-2026-adverts"
+        },
+        {
+          "label": "Ad Age: Coke, AI and emotion",
+          "url": "https://adage.com/brand-marketing/food-beverage/aa-coke-world-cup-2026-ai-emotion-fans/"
+        }
+      ]
+    },
+    {
+      "id": "pepsi-football-nation-wc26",
+      "youtubeId": "UWFnOdU33MQ",
+      "ads": true,
+      "scifiFantasy": false,
+      "title": "Pepsi — Football Nation (World Cup 2026)",
+      "director": "Pepsi",
+      "tool": "",
+      "date": "2026-04-20",
+      "categories": [
+        "Photorealism",
+        "VFX",
+        "Narrative"
+      ],
+      "highlight": "World Cup 2026 · 'the AI can still be quite distracting'",
+      "description": "David Beckham and football banter between fans debating the rules of a 'Football Nation'. Named among the worst World Cup ads of 2026 for its generative AI visuals: less egregious than Coca-Cola's, but still distracting at times.",
+      "source": "https://www.youtube.com/watch?v=UWFnOdU33MQ",
+      "links": [
+        {
+          "label": "Review: Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/the-good-the-bad-and-the-ai-of-world-cup-2026-adverts"
+        }
+      ]
+    },
+    {
+      "id": "powerade-power-your-fate-wc26",
+      "youtubeId": "Ecs-f2Nie4I",
+      "ads": true,
+      "scifiFantasy": false,
+      "title": "Powerade — Power Your Fate (World Cup 2026)",
+      "director": "Powerade · WPP Open X",
+      "tool": "",
+      "date": "2026-04-23",
+      "categories": [
+        "Aesthetics / Art",
+        "VFX",
+        "Transitions"
+      ],
+      "highlight": "World Cup 2026 · players turned into murals, statues and bronze",
+      "description": "Lamine Yamal and Rodrygo in a poetic take on preparation and discipline: players transform into painted murals, sculpted statues and a bronze stadium facade. Created by WPP Open X. Praised as a surprisingly artistic energy-drink spot.",
+      "source": "https://www.youtube.com/watch?v=Ecs-f2Nie4I",
+      "links": [
+        {
+          "label": "Review: Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/the-good-the-bad-and-the-ai-of-world-cup-2026-adverts"
+        }
+      ]
+    },
+    {
+      "id": "lego-everyone-wants-a-piece-wc26",
+      "youtubeId": "H0gbOS6-EQ4",
+      "ads": true,
+      "scifiFantasy": false,
+      "title": "LEGO — Everyone Wants a Piece (World Cup 2026)",
+      "director": "LEGO",
+      "tool": "No AI (practical effects)",
+      "date": "2026-04-02",
+      "categories": [
+        "Narrative",
+        "Viral"
+      ],
+      "highlight": "The counterpoint: NO AI · 314M views in 24h",
+      "description": "Mbappé, Messi, Ronaldo and Vini Jr. all want a piece of the LEGO FIFA World Cup trophy, and they are not alone. Posted with #HonestlyItsnotai: traditional effects and body doubles, no generative AI. 314 million views on players' Instagram accounts in 24 hours. Included as a contrast: the idea beats the tool.",
+      "source": "https://www.youtube.com/watch?v=H0gbOS6-EQ4",
+      "links": [
+        {
+          "label": "Review: Creative Bloq",
+          "url": "https://www.creativebloq.com/design/advertising/the-good-the-bad-and-the-ai-of-world-cup-2026-adverts"
+        },
+        {
+          "label": "DesignRush: best World Cup ads",
+          "url": "https://news.designrush.com/best-fifa-world-cup-2026-ads"
+        }
+      ]
     }
   ]
 }
