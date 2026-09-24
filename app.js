@@ -174,6 +174,44 @@
     return true;
   }
 
+  // Quesitos: cada porción es un grupo de vídeos con la misma combinación de
+  // flags (cartoon / ads / sci-fi). Se rellena si el grupo se ve con los
+  // toggles actuales y se vacía si queda fuera (misma regla OR que matches()).
+  function drawPie() {
+    const svg = document.getElementById("pie");
+    if (!svg) return;
+    const NAMES = { scifiFantasy: "Sci-fi / Fantasy", cartoon: "Cartoon", ads: "Ads" };
+    const HIDE = { scifiFantasy: "hideScifi", cartoon: "hideCartoon", ads: "hideAds" };
+    const groups = new Map();
+    state.videos.forEach((v) => {
+      const f = ["ads", "cartoon", "scifiFantasy"].filter((k) => v[k]);
+      const key = f.join("+");
+      if (!groups.has(key)) groups.set(key, { flags: f, n: 0 });
+      groups.get(key).n++;
+    });
+    const order = ["", "ads", "cartoon", "scifiFantasy"];
+    const list = [...groups.entries()].sort((a, b) => {
+      const ia = order.indexOf(a[0]), ib = order.indexOf(b[0]);
+      return (ia < 0 ? 9 : ia) - (ib < 0 ? 9 : ib) || a[0].localeCompare(b[0]);
+    });
+    const N = state.videos.length, R = 20, C = 22;
+    let ang = -Math.PI / 2, html = `<circle cx="${C}" cy="${C}" r="${R}" class="pie__ring"/>`;
+    list.forEach(([key, g]) => {
+      const on = !g.flags.length || g.flags.some((k) => !state[HIDE[k]]);
+      const a2 = ang + (g.n / N) * Math.PI * 2;
+      const x1 = C + R * Math.cos(ang), y1 = C + R * Math.sin(ang);
+      const x2 = C + R * Math.cos(a2), y2 = C + R * Math.sin(a2);
+      const big = a2 - ang > Math.PI ? 1 : 0;
+      const d = g.n === N
+        ? `M${C - R},${C}a${R},${R} 0 1,0 ${2 * R},0a${R},${R} 0 1,0 ${-2 * R},0`
+        : `M${C},${C}L${x1.toFixed(2)},${y1.toFixed(2)}A${R},${R} 0 ${big},1 ${x2.toFixed(2)},${y2.toFixed(2)}Z`;
+      const label = (g.flags.map((k) => NAMES[k]).join(" + ") || "Live action / other") + ` · ${g.n}`;
+      html += `<path d="${d}" class="pie__slice${on ? "" : " is-out"}"><title>${label}</title></path>`;
+      ang = a2;
+    });
+    svg.innerHTML = html;
+  }
+
   function render() {
     // Comparador de fecha: sin fecha al final; newest-first en desc
     const byDate = (a, b, dir) => {
@@ -201,6 +239,7 @@
 
     const total = list.length + pinned.length;
     els.count.textContent = `${total}/${state.videos.length}`;
+    drawPie();
     els.footCount.textContent = `${total} VIDEOS`;
 
     els.grid.innerHTML = "";

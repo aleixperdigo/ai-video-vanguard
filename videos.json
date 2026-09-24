@@ -583,7 +583,8 @@
       ],
       "highlight": "Runway Gen:48 · Best Character (2023)",
       "description": "Short film that won 'Best Character' at Runway Gen:48 (2023).",
-      "source": "https://www.youtube.com/watch?v=7K65pYWa220"
+      "source": "https://www.youtube.com/watch?v=7K65pYWa220",
+      "scifiFantasy": true
     },
     {
       "id": "poof-short",
@@ -757,7 +758,6 @@
     {
       "id": "worldcup-2026-bluehorizon",
       "youtubeId": "7RogQiih3M8",
-      "ads": true,
       "title": "World Cup 2026 — The AI Football Movie",
       "director": "The Blue Horizon AI",
       "tool": "",
@@ -767,7 +767,7 @@
         "Narrative",
         "Camera movement"
       ],
-      "highlight": "",
+      "highlight": "Fan film",
       "description": "AI cinematic piece about the 2026 World Cup. Tool unconfirmed.",
       "source": "https://www.youtube.com/watch?v=7RogQiih3M8"
     },
