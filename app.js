@@ -340,6 +340,16 @@
       body.appendChild(link);
     }
 
+    (v.links || []).forEach((x) => {
+      const link = document.createElement("a");
+      link.className = "card__source";
+      link.href = x.url;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.textContent = x.label.toUpperCase() + " ↗";
+      body.appendChild(link);
+    });
+
     if (LIKES_ENABLED) {
     const like = document.createElement("button");
     like.className = "card__like";
