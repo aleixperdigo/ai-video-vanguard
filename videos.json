@@ -13,9 +13,103 @@
     "Aesthetics / Art",
     "Transitions",
     "Narrative",
-    "Worldbuilding"
+    "Worldbuilding",
+    "Viral"
   ],
   "videos": [
+    {
+      "id": "the-prompter-midnightmonkeys",
+      "youtubeId": "_MhKwYjkWFc",
+      "scifiFantasy": true,
+      "title": "THE PROMPTER",
+      "director": "Midnight Monkeys",
+      "tool": "Higgsfield",
+      "date": "2026-08-30",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Photorealism",
+        "Viral"
+      ],
+      "highlight": "Higgsfield Global Film Festival 2026 · entry · 260K+ views",
+      "description": "An AI researcher generates artificial worlds to harvest genuine human emotion, until his experiment slips beyond his control. A psychological sci-fi short made entirely with AI: every image, voice and sound.",
+      "source": "https://www.youtube.com/watch?v=_MhKwYjkWFc"
+    },
+    {
+      "id": "critterz-remastered-sora",
+      "youtubeId": "qjuk0YCUdo8",
+      "scifiFantasy": false,
+      "title": "Critterz — Remastered with Sora",
+      "director": "OpenAI · Native Foreign (Chad Nelson)",
+      "tool": "Sora",
+      "date": "2025-02-13",
+      "categories": [
+        "Viral",
+        "Aesthetics / Art",
+        "Character consistency",
+        "Narrative"
+      ],
+      "highlight": "Seed of OpenAI's AI-animated feature (delayed from Cannes 2026)",
+      "description": "Shot-for-shot Sora remake of the award-winning animated short, side by side with the original. It is the seed of 'Critterz', the OpenAI-backed feature (budget under $30M, nine-month production) written by the Paddington in Peru writers, which was set to debut at Cannes 2026 and has since been delayed.",
+      "source": "https://www.youtube.com/watch?v=qjuk0YCUdo8",
+      "links": [
+        {
+          "label": "Context: Critterz feature at Cannes",
+          "url": "https://deadline.com/2026/05/open-ai-produced-animated-family-film-critterz-cannes-1236879586/"
+        }
+      ]
+    },
+    {
+      "id": "fruit-love-island",
+      "youtubeId": "vAmpvHqlxag",
+      "scifiFantasy": false,
+      "title": "Fruit Love Island — Episodes 1-9",
+      "director": "@ai.cinema021 (original, TikTok) · YouTube compilation",
+      "tool": "",
+      "date": "2026-03-16",
+      "categories": [
+        "Viral",
+        "Character consistency",
+        "Narrative",
+        "Lipsync"
+      ],
+      "highlight": "AI micro-drama phenomenon · 3.1M followers in 9 days",
+      "description": "A reality-show parody starring anthropomorphic fruit, released on TikTok by @ai.cinema021 on March 13, 2026. It gained over 3.1 million followers in nine days, with single episodes above 10 million views, and spawned a whole genre of AI fruit micro-dramas. Originally on TikTok; this is a YouTube compilation.",
+      "source": "https://www.youtube.com/watch?v=vAmpvHqlxag",
+      "links": [
+        {
+          "label": "Context: AI fruit short dramas",
+          "url": "https://baike.baidu.com/en/item/AI%20Fruit%20Short%20Drama/3428414"
+        }
+      ]
+    },
+    {
+      "id": "cruise-pitt-seedance-robinson",
+      "youtubeId": "pDA1LMceoRY",
+      "scifiFantasy": false,
+      "title": "Tom Cruise vs. Brad Pitt — the Seedance 2.0 clip that shook Hollywood",
+      "director": "Ruairí Robinson (clip) · report by Inside Edition",
+      "tool": "Seedance 2.0",
+      "date": "2026-02-16",
+      "categories": [
+        "Viral",
+        "Photorealism",
+        "Camera movement"
+      ],
+      "highlight": "The most viral AI clip of 2026 · 3M+ views on X",
+      "description": "A 15-second rooftop fistfight between AI versions of Tom Cruise and Brad Pitt, made by Irish filmmaker Ruairí Robinson with a two-line Seedance 2.0 prompt. It triggered statements from SAG-AFTRA and the MPA and a cease-and-desist from Disney. Some argue it was green screen plus face swap. The original was posted on X; this is a news report that shows the clip.",
+      "source": "https://www.youtube.com/watch?v=pDA1LMceoRY",
+      "links": [
+        {
+          "label": "Context: SAG-AFTRA reaction",
+          "url": "https://geektyrant.com/news/sag-aftra-slams-seedance-20-after-ai-tom-cruise-and-brad-pitt-fight-video-blows-up-online"
+        },
+        {
+          "label": "Counterpoint: green screen + face swap?",
+          "url": "https://pivot-to-ai.com/2026/02/18/seedances-generated-ai-cruise-pitt-demo-was-a-green-screen-and-face-swap/"
+        }
+      ]
+    },
     {
       "id": "by-your-side-bluehorizon",
       "youtubeId": "A14HI1p3Dyo",
