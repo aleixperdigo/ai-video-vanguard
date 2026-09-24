@@ -17,6 +17,147 @@
   ],
   "videos": [
     {
+      "id": "by-your-side-bluehorizon",
+      "youtubeId": "A14HI1p3Dyo",
+      "scifiFantasy": true,
+      "title": "BY YOUR SIDE",
+      "director": "The Blue Horizon AI",
+      "tool": "Higgsfield",
+      "date": "2026-09-14",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Character consistency",
+        "Photorealism"
+      ],
+      "highlight": "Higgsfield Global Film Festival 2026 · entry",
+      "description": "Paris has fallen silent and nature is taking the city back. A municipal service robot keeps cleaning the streets long after civilization is gone, until something starts following him.",
+      "source": "https://www.youtube.com/watch?v=A14HI1p3Dyo"
+    },
+    {
+      "id": "still-bluehorizon",
+      "youtubeId": "PcYDG7gyMZU",
+      "scifiFantasy": false,
+      "title": "STILL",
+      "director": "The Blue Horizon AI (dir. Avaren)",
+      "tool": "Higgsfield",
+      "date": "2026-09-14",
+      "categories": [
+        "Narrative",
+        "Aesthetics / Art",
+        "Character consistency"
+      ],
+      "highlight": "Higgsfield Global Film Festival 2026 · entry",
+      "description": "In the silence of a psychiatric institution, a young man notices something no one else seems to see. A short about memory, music and grief, with a handcrafted stop-motion look.",
+      "source": "https://www.youtube.com/watch?v=PcYDG7gyMZU"
+    },
+    {
+      "id": "costa-verde-cannone",
+      "youtubeId": "qDsDUE5en0E",
+      "scifiFantasy": true,
+      "title": "Costa Verde",
+      "director": "Léo Cannone & New Forest Film",
+      "tool": "",
+      "date": "2026-06-02",
+      "categories": [
+        "Narrative",
+        "Aesthetics / Art",
+        "Worldbuilding",
+        "Photorealism"
+      ],
+      "highlight": "Best WAiFF Film + Best Fantasy Film · Runway AIF 2026 Honoree",
+      "description": "Corsica in the 90s: a boy unboxes his first camera and documents a summer with his grandparents. What begins as play becomes a chronicle of small wonders, where magical beings slip into childhood memories. Premiered on NOWNESS.",
+      "source": "https://www.youtube.com/watch?v=qDsDUE5en0E",
+      "awards": [
+        {
+          "label": "World AI Film Festival 2026 · Best WAiFF Film",
+          "url": "https://www.youtube.com/watch?v=qDsDUE5en0E"
+        },
+        {
+          "label": "WAiFF 2026 · Best Fantasy Film",
+          "url": "https://www.youtube.com/watch?v=qDsDUE5en0E"
+        },
+        {
+          "label": "Runway AIF 2026 · Honoree",
+          "url": "https://aif.runwayml.com/"
+        }
+      ]
+    },
+    {
+      "id": "little-mes-levitan",
+      "youtubeId": "wZKS5JKJNjA",
+      "scifiFantasy": false,
+      "title": "Little Mes",
+      "director": "Lucas Levitan & Fabián Jiménez",
+      "tool": "",
+      "date": "2026-06-03",
+      "categories": [
+        "Narrative",
+        "Aesthetics / Art",
+        "Character consistency"
+      ],
+      "highlight": "Runway AIF 2026 film winners",
+      "description": "A cinematic internal monologue: a man becomes aware of multiple versions of himself, the parallel lives he didn't lead, quietly coexisting at the edge of his present. A Salad Collective production.",
+      "source": "https://www.youtube.com/watch?v=wZKS5JKJNjA",
+      "awards": [
+        {
+          "label": "Runway AIF 2026 · Film winners",
+          "url": "https://aif.runwayml.com/"
+        }
+      ]
+    },
+    {
+      "id": "tairell-isnt-real-daveclark",
+      "youtubeId": "uZgqOgQWSv0",
+      "scifiFantasy": false,
+      "title": "Tairell Isn't Real",
+      "director": "Dave Clark",
+      "tool": "",
+      "date": "2026-04-24",
+      "categories": [
+        "Narrative",
+        "Character consistency",
+        "Photorealism"
+      ],
+      "highlight": "Runway AIF 2026 film winners",
+      "description": "Psychological thriller: a hyper-perfect influencer starts to unravel when the internet becomes convinced he isn't real, and he has to face the possibility that they might be right.",
+      "source": "https://www.youtube.com/watch?v=uZgqOgQWSv0",
+      "awards": [
+        {
+          "label": "Runway AIF 2026 · Film winners",
+          "url": "https://aif.runwayml.com/"
+        }
+      ]
+    },
+    {
+      "id": "a-face-only-a-mother-could-love-gaudette",
+      "youtubeId": "wytfCS-N8Sk",
+      "scifiFantasy": false,
+      "title": "A Face Only A Mother Could Love",
+      "director": "Robert Gaudette",
+      "tool": "",
+      "date": "2026-04-23",
+      "categories": [
+        "Narrative",
+        "Character consistency",
+        "Photorealism",
+        "Aesthetics / Art"
+      ],
+      "highlight": "Double winner: Runway AIF 2026 Grand Prix + Reply AI Film Festival 2026",
+      "description": "Marcel Dupont moves through Paris with complete confidence while the world moves away from him. A film about two lonely people, one act of courage and an accordion player who plays exactly the right song at the right moment.",
+      "source": "https://www.youtube.com/watch?v=wytfCS-N8Sk",
+      "awards": [
+        {
+          "label": "Runway AIF 2026 · Grand Prix",
+          "url": "https://aif.runwayml.com/"
+        },
+        {
+          "label": "Reply AI Film Festival 2026 · Winner",
+          "url": "https://aijourn.com/reply-a-face-only-a-mother-could-love-by-robert-gaudette-wins-the-reply-ai-film-festival-2026-the-international-competition-exploring-the-intersection-of-cinema-and-artificial-intelligence/"
+        }
+      ]
+    },
+    {
       "id": "pomegranate-zacklondon",
       "youtubeId": "fyZhC2TXgcs",
       "scifiFantasy": true,
@@ -30,9 +171,15 @@
         "Character consistency",
         "Aesthetics / Art"
       ],
-      "highlight": "28-minute short produced with Fable Studio",
-      "description": "After centuries of simulated wars, wives and wonders, a jaded aristocrat visits his neighborhood dreamspool dealer looking for something that still feels real. Written and directed by Zack London. Produced by Gossip Goblin + Fable Studio (Edward Saatchi). Animation lead: Alexandru Mihai. Models: TBD.",
-      "source": "https://www.youtube.com/watch?v=fyZhC2TXgcs"
+      "highlight": "Preview of the feature 'Gods Don't Give Gifts' · in US theaters Oct 30",
+      "description": "After centuries of simulated wars, wives and wonders, a jaded aristocrat visits his neighborhood dreamspool dealer looking for something that still feels real. Written and directed by Zack London. Produced by Gossip Goblin + Fable Studio (Edward Saatchi). Animation lead: Alexandru Mihai. Models: TBD. Pomegranate is the preview short of Zack London's first feature, 'Gods Don't Give Gifts': a sci-fi horror anthology of four shorts set in the 'Second Cycle of Humanity', opening in several hundred US theaters on October 30, 2026 (no trailer yet).",
+      "source": "https://www.youtube.com/watch?v=fyZhC2TXgcs",
+      "awards": [
+        {
+          "label": "Feature: Gods Don't Give Gifts · Oct 30, 2026",
+          "url": "https://deadline.com/2026/07/gossip-goblin-ai-feature-gods-dont-give-gifts-youtube-theaters-1236998952/"
+        }
+      ]
     },
     {
       "id": "nexus-kafar",
@@ -554,9 +701,15 @@
         "Aesthetics / Art",
         "Photorealism"
       ],
-      "highlight": "",
-      "description": "Fiction short film by Dorian & Daniel. Tool unconfirmed.",
-      "source": "https://www.youtube.com/watch?v=eoZyWHLHHLY"
+      "highlight": "Runway AIF 2026 · Gold",
+      "description": "Once upon a time, in a snow-covered trailer park, the wolf is found dead at the bottom of a well. A sharp-witted hare starts to investigate, and the truth shifts. Tool unconfirmed.",
+      "source": "https://www.youtube.com/watch?v=eoZyWHLHHLY",
+      "awards": [
+        {
+          "label": "Runway AIF 2026 · Gold",
+          "url": "https://aif.runwayml.com/"
+        }
+      ]
     }
   ]
 }

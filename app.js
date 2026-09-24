@@ -298,6 +298,19 @@
       body.insertBefore(hi, body.querySelector(".card__tags"));
     }
 
+    if (v.awards && v.awards.length) {
+      const aw = document.createElement("div");
+      aw.className = "card__awards";
+      v.awards.forEach((x) => {
+        const el = document.createElement(x.url ? "a" : "span");
+        el.className = "award";
+        el.textContent = "🏆 " + x.label + (x.url ? " ↗" : "");
+        if (x.url) { el.href = x.url; el.target = "_blank"; el.rel = "noopener"; }
+        aw.appendChild(el);
+      });
+      body.insertBefore(aw, body.querySelector(".card__tags"));
+    }
+
     const tools = node.querySelector(".card__tool");
     if (v.tool) tools.textContent = v.tool;
     else tools.remove();
