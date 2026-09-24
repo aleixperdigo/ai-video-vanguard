@@ -38,7 +38,7 @@
     {
       "id": "critterz-remastered-sora",
       "youtubeId": "qjuk0YCUdo8",
-      "scifiFantasy": false,
+      "scifiFantasy": true,
       "title": "Critterz — Remastered with Sora",
       "director": "OpenAI · Native Foreign (Chad Nelson)",
       "tool": "Sora",
@@ -398,7 +398,8 @@
       ],
       "highlight": "Higgsfield Original · animated short",
       "description": "Official teaser for an animated short (2026). Produced by Higgsfield AI.",
-      "source": "https://www.youtube.com/watch?v=BwVG_n9-jz4"
+      "source": "https://www.youtube.com/watch?v=BwVG_n9-jz4",
+      "scifiFantasy": true
     },
     {
       "id": "zephyr-ep1-higgsfield",
