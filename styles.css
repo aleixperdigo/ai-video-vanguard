@@ -670,3 +670,6 @@ body {
 /* IN = amarillo verdoso (el lima de la web), OUT = naranja rojizo */
 .filter-toggle[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .filter-toggle[aria-pressed="false"] { background: #ff5a2e; border-color: #ff5a2e; color: #0a0a0a; }
+
+/* Etiquetas de tipo (live action / cartoon / ad / sci-fi) */
+.tag--type { color: var(--accent); border-color: var(--accent); }

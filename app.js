@@ -376,6 +376,15 @@
     else tools.remove();
 
     const tags = node.querySelector(".card__tags");
+    // Etiquetas de tipo, para que la clasificación se vea en cada ficha
+    [v.cartoon ? "Cartoon" : "Live action", v.ads && "Ad", v.scifiFantasy && "Sci-fi / Fantasy"]
+      .filter(Boolean)
+      .forEach((label) => {
+        const t = document.createElement("span");
+        t.className = "tag tag--type";
+        t.textContent = label;
+        tags.appendChild(t);
+      });
     (v.categories || []).forEach((c) => {
       const t = document.createElement("span");
       t.className = "tag";
