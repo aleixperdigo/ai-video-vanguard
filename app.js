@@ -116,32 +116,34 @@
       });
     }
 
-    // Cada botón rota IN → OUT → ONLY → IN
+    // Cada botón rota IN → OUT → ONLY → IN. ONLY es exclusivo: mientras un
+    // botón está en ONLY, los demás quedan apagados hasta que vuelva a IN.
     const NEXT = { in: "out", out: "only", only: "in" };
-    [["genreToggle", "scifiFantasy"], ["cartoonToggle", "cartoon"], ["realismToggle", "realism"], ["adsToggle", "ads"]]
-      .forEach(([id, key]) => {
-        const btn = document.getElementById(id);
-        if (!btn) return;
-        btn.addEventListener("click", () => {
-          const m = (state.mode[key] = NEXT[state.mode[key]]);
-          btn.dataset.mode = m;
-          btn.setAttribute("aria-pressed", m === "out" ? "false" : "true");
-          btn.querySelector(".filter-toggle__state").textContent = m.toUpperCase();
-          render();
-        });
+    const BTNS = [["genreToggle", "scifiFantasy"], ["cartoonToggle", "cartoon"], ["realismToggle", "realism"], ["adsToggle", "ads"]]
+      .map(([id, key]) => [document.getElementById(id), key])
+      .filter(([btn]) => btn);
+    BTNS.forEach(([btn, key]) => {
+      btn.addEventListener("click", () => {
+        const m = (state.mode[key] = NEXT[state.mode[key]]);
+        btn.dataset.mode = m;
+        btn.setAttribute("aria-pressed", m === "out" ? "false" : "true");
+        btn.querySelector(".filter-toggle__state").textContent = m.toUpperCase();
+        BTNS.forEach(([b, k]) => { b.disabled = m === "only" && k !== key; });
+        render();
       });
+    });
   }
 
   // Categorías de un vídeo (live action se deduce: todo lo que no es cartoon)
   const catsOf = (v) => ["realism", "ads", "cartoon", "scifiFantasy"].filter((k) => (k === "realism" ? !v.cartoon : v[k]));
 
-  // Reglas: OUT siempre oculta. Si hay algún ONLY, el vídeo tiene que tener
-  // al menos una de las categorías en ONLY (el resto de IN no cuenta).
+  // Reglas: con un ONLY activo solo cuenta esa categoría (los demás botones
+  // no importan). Sin ONLY, cualquier categoría en OUT oculta el vídeo.
   function passesGenre(cats) {
     const M = state.mode;
-    if (cats.some((k) => M[k] === "out")) return false;
-    const onlys = Object.keys(M).filter((k) => M[k] === "only");
-    return !onlys.length || cats.some((k) => M[k] === "only");
+    const only = Object.keys(M).find((k) => M[k] === "only");
+    if (only) return cats.includes(only);
+    return !cats.some((k) => M[k] === "out");
   }
 
   function matches(v) {

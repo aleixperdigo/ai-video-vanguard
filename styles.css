@@ -676,3 +676,6 @@ body {
 
 /* ONLY = blanco: solo se ve esa categoría */
 .filter-toggle[data-mode="only"] { background: #ffffff; border-color: #ffffff; color: #0a0a0a; }
+
+/* Con otro botón en ONLY, el resto queda apagado */
+.filter-toggle:disabled { opacity: .25; cursor: not-allowed; filter: grayscale(1); }
