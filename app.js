@@ -192,7 +192,7 @@
   function drawPie() {
     const svg = document.getElementById("pie");
     if (!svg) return;
-    const NAMES = { realism: "Realism", scifiFantasy: "Sci-fi / Fantasy", cartoon: "Cartoon", ads: "Ads" };
+    const NAMES = { realism: "Live action", scifiFantasy: "Sci-fi / Fantasy", cartoon: "Cartoon", ads: "Ads" };
     const HIDE = { realism: "hideRealism", scifiFantasy: "hideScifi", cartoon: "hideCartoon", ads: "hideAds" };
     const groups = new Map();
     state.videos.forEach((v) => {
