@@ -18,6 +18,25 @@
   ],
   "videos": [
     {
+      "id": "la-triste-figura-contanimation",
+      "youtubeId": "Ixj6Zu9bahU",
+      "cartoon": true,
+      "scifiFantasy": false,
+      "title": "La triste figura (The Sorrowful Figure) — Contanimation TV #1",
+      "director": "Contanimation Films",
+      "tool": "Magnific",
+      "date": "2026-09-24",
+      "categories": [
+        "Narrative",
+        "Character consistency",
+        "Aesthetics / Art",
+        "Lipsync"
+      ],
+      "highlight": "Contanimation TV #1 · produced with Magnific Originals",
+      "description": "An 11-minute AI animated comedy adventure inspired by Don Quixote's charge against the windmills. Sancho Panza starts to suspect his master is far more delusional than he thought, until Don Quixote spots a line of giants only he can see. First short of Contanimation TV, an animated anthology produced with Magnific Originals.",
+      "source": "https://www.youtube.com/watch?v=Ixj6Zu9bahU&t=4s"
+    },
+    {
       "id": "the-prompter-midnightmonkeys",
       "youtubeId": "_MhKwYjkWFc",
       "scifiFantasy": true,
