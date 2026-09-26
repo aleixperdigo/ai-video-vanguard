@@ -19,6 +19,7 @@
     hideScifi: false, // por defecto TODO INCLUIDO (IN)
     hideCartoon: false,
     hideAds: false,
+    hideRealism: false, // realismo = todo lo que no es cartoon
     cols: 2, // referencias por fila (1 / 2 / 4)
     filtered: [],
     rendered: 0,
@@ -139,6 +140,17 @@
       });
     }
 
+    const realism = document.getElementById("realismToggle");
+    if (realism) {
+      realism.addEventListener("click", () => {
+        state.hideRealism = !state.hideRealism;
+        const included = !state.hideRealism;
+        realism.setAttribute("aria-pressed", included ? "true" : "false");
+        realism.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
+        render();
+      });
+    }
+
     const ads = document.getElementById("adsToggle");
     if (ads) {
       ads.addEventListener("click", () => {
@@ -159,6 +171,7 @@
     if (v.scifiFantasy) flags.push(!state.hideScifi);
     if (v.cartoon) flags.push(!state.hideCartoon);
     if (v.ads) flags.push(!state.hideAds);
+    if (!v.cartoon) flags.push(!state.hideRealism);
     if (flags.length && !flags.some(Boolean)) return false;
     // Categorías: el vídeo debe tener TODAS las categorías activas
     for (const c of state.activeCats) {
@@ -180,16 +193,16 @@
   function drawPie() {
     const svg = document.getElementById("pie");
     if (!svg) return;
-    const NAMES = { scifiFantasy: "Sci-fi / Fantasy", cartoon: "Cartoon", ads: "Ads" };
-    const HIDE = { scifiFantasy: "hideScifi", cartoon: "hideCartoon", ads: "hideAds" };
+    const NAMES = { realism: "Realism", scifiFantasy: "Sci-fi / Fantasy", cartoon: "Cartoon", ads: "Ads" };
+    const HIDE = { realism: "hideRealism", scifiFantasy: "hideScifi", cartoon: "hideCartoon", ads: "hideAds" };
     const groups = new Map();
     state.videos.forEach((v) => {
-      const f = ["ads", "cartoon", "scifiFantasy"].filter((k) => v[k]);
+      const f = ["realism", "ads", "cartoon", "scifiFantasy"].filter((k) => (k === "realism" ? !v.cartoon : v[k]));
       const key = f.join("+");
       if (!groups.has(key)) groups.set(key, { flags: f, n: 0 });
       groups.get(key).n++;
     });
-    const order = ["", "ads", "cartoon", "scifiFantasy"];
+    const order = ["realism", "realism+ads", "realism+scifiFantasy", "realism+ads+scifiFantasy", "cartoon", "cartoon+scifiFantasy"];
     const list = [...groups.entries()].sort((a, b) => {
       const ia = order.indexOf(a[0]), ib = order.indexOf(b[0]);
       return (ia < 0 ? 9 : ia) - (ib < 0 ? 9 : ib) || a[0].localeCompare(b[0]);
@@ -205,7 +218,7 @@
       const d = g.n === N
         ? `M${C - R},${C}a${R},${R} 0 1,0 ${2 * R},0a${R},${R} 0 1,0 ${-2 * R},0`
         : `M${C},${C}L${x1.toFixed(2)},${y1.toFixed(2)}A${R},${R} 0 ${big},1 ${x2.toFixed(2)},${y2.toFixed(2)}Z`;
-      const label = (g.flags.map((k) => NAMES[k]).join(" + ") || "Live action / other") + ` · ${g.n}`;
+      const label = g.flags.map((k) => NAMES[k]).join(" + ") + ` · ${g.n}`;
       html += `<path d="${d}" class="pie__slice${on ? "" : " is-out"}"><title>${label}</title></path>`;
       ang = a2;
     });
@@ -244,6 +257,15 @@
 
     els.grid.innerHTML = "";
 
+    const allIn = !state.hideScifi && !state.hideCartoon && !state.hideAds && !state.hideRealism;
+    const allOut = state.hideScifi && state.hideCartoon && state.hideAds && state.hideRealism;
+    const allEl = document.getElementById("genreAll");
+    if (allEl) allEl.hidden = !allIn;
+
+    if (allOut) {
+      els.grid.innerHTML = `<div class="empty empty--allout">All categories out</div>`;
+      return;
+    }
     if (!total) {
       els.grid.innerHTML = `<div class="empty">No results for these filters</div>`;
       return;
