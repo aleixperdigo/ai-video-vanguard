@@ -666,3 +666,7 @@ body {
 .genre-all[hidden] { display: none; }
 /* Todo OUT: mensaje grande en lugar del feed */
 .empty--allout { font-size: clamp(34px, 7vw, 96px); line-height: .95; font-weight: 900; color: var(--accent); border-color: var(--accent); padding: 90px 20px; letter-spacing: -.01em; }
+
+/* IN = amarillo verdoso (el lima de la web), OUT = naranja rojizo */
+.filter-toggle[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.filter-toggle[aria-pressed="false"] { background: #ff5a2e; border-color: #ff5a2e; color: #0a0a0a; }
