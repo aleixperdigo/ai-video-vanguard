@@ -182,6 +182,9 @@
       const ia = order.indexOf(a[0]), ib = order.indexOf(b[0]);
       return (ia < 0 ? 9 : ia) - (ib < 0 ? 9 : ib) || a[0].localeCompare(b[0]);
     });
+    // Los grupos visibles van primero y juntos: así lo seleccionado forma una
+    // sola cuña desde las 12 en punto, en vez de quesitos sueltos por el círculo
+    list.sort((a, b) => passesGenre(b[1].flags) - passesGenre(a[1].flags));
     const N = state.videos.length, R = 20, C = 22;
     let ang = -Math.PI / 2, html = `<circle cx="${C}" cy="${C}" r="${R}" class="pie__ring"/>`;
     list.forEach(([key, g]) => {
