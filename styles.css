@@ -679,3 +679,24 @@ body {
 
 /* Con otro botón en ONLY, el resto queda apagado */
 .filter-toggle:disabled { opacity: .25; cursor: not-allowed; filter: grayscale(1); }
+
+/* Círculo completo: amarillo entero, sin rayas */
+.pie__full { fill: var(--accent); stroke: none; }
+/* Pulso con eco al cambiar la selección (círculo + contador) */
+.pie.is-pulse { animation: pie-pulse .9s cubic-bezier(.2,.8,.2,1); }
+.count.is-pulse { display: inline-block; animation: count-pulse .9s cubic-bezier(.2,.8,.2,1); }
+@keyframes pie-pulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(232,255,69,0)); }
+  22% { transform: scale(1.16); filter: drop-shadow(0 0 8px rgba(232,255,69,.75)); }
+  45% { transform: scale(.97); filter: drop-shadow(0 0 2px rgba(232,255,69,.3)); }
+  65% { transform: scale(1.06); filter: drop-shadow(0 0 5px rgba(232,255,69,.45)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(232,255,69,0)); }
+}
+@keyframes count-pulse {
+  0% { transform: translateY(0); color: var(--accent); text-shadow: none; }
+  22% { transform: translateY(-3px) scale(1.1); color: #fff; text-shadow: 0 0 10px rgba(232,255,69,.8), -4px 0 0 rgba(232,255,69,.35); }
+  45% { transform: translateY(0) scale(.98); color: var(--accent); text-shadow: -2px 0 0 rgba(232,255,69,.25); }
+  65% { transform: translateY(-1px) scale(1.03); }
+  100% { transform: none; color: var(--accent); text-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) { .pie.is-pulse, .count.is-pulse { animation: none; } }

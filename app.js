@@ -197,7 +197,19 @@
       html += `<path d="${d}" class="pie__slice${on ? "" : " is-out"}"><title>${label}</title></path>`;
       ang = a2;
     });
+    // Todo dentro: círculo lleno, sin rayas entre quesitos
+    if (list.every(([, g]) => passesGenre(g.flags))) html += `<circle cx="${C}" cy="${C}" r="${R}" class="pie__full"><title>All · ${N}</title></circle>`;
     svg.innerHTML = html;
+  }
+
+  // Pulso sutil en el círculo y el contador cuando cambia el número visible
+  function pulse() {
+    [document.getElementById("pie"), els.count].forEach((el) => {
+      if (!el) return;
+      el.classList.remove("is-pulse");
+      void el.getBoundingClientRect(); // reinicia la animación
+      el.classList.add("is-pulse");
+    });
   }
 
   function render() {
@@ -228,6 +240,8 @@
     const total = list.length + pinned.length;
     els.count.textContent = `${total}/${state.videos.length}`;
     drawPie();
+    if (state.lastTotal !== undefined && state.lastTotal !== total) pulse();
+    state.lastTotal = total;
     els.footCount.textContent = `${total} VIDEOS`;
 
     els.grid.innerHTML = "";
