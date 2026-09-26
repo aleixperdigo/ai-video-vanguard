@@ -16,10 +16,9 @@
     query: "",
     sortMode: "date", // "date" | "likes"
     sortDir: "desc", // desc = más nuevo primero (lo último, arriba)
-    hideScifi: false, // por defecto TODO INCLUIDO (IN)
-    hideCartoon: false,
-    hideAds: false,
-    hideRealism: false, // realismo = todo lo que no es cartoon
+    // Modo por categoría: "in" | "out" | "only". Por defecto TODO IN.
+    // realism = live action = todo lo que no es cartoon.
+    mode: { scifiFantasy: "in", cartoon: "in", ads: "in", realism: "in" },
     cols: 2, // referencias por fila (1 / 2 / 4)
     filtered: [],
     rendered: 0,
@@ -117,61 +116,37 @@
       });
     }
 
-    const genre = document.getElementById("genreToggle");
-    if (genre) {
-      genre.addEventListener("click", () => {
-        state.hideScifi = !state.hideScifi;
-        const included = !state.hideScifi;
-        // aria-pressed / relleno dorado = INCLUIDO (IN)
-        genre.setAttribute("aria-pressed", included ? "true" : "false");
-        genre.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
-        render();
+    // Cada botón rota IN → OUT → ONLY → IN
+    const NEXT = { in: "out", out: "only", only: "in" };
+    [["genreToggle", "scifiFantasy"], ["cartoonToggle", "cartoon"], ["realismToggle", "realism"], ["adsToggle", "ads"]]
+      .forEach(([id, key]) => {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+        btn.addEventListener("click", () => {
+          const m = (state.mode[key] = NEXT[state.mode[key]]);
+          btn.dataset.mode = m;
+          btn.setAttribute("aria-pressed", m === "out" ? "false" : "true");
+          btn.querySelector(".filter-toggle__state").textContent = m.toUpperCase();
+          render();
+        });
       });
-    }
+  }
 
-    const cartoon = document.getElementById("cartoonToggle");
-    if (cartoon) {
-      cartoon.addEventListener("click", () => {
-        state.hideCartoon = !state.hideCartoon;
-        const included = !state.hideCartoon;
-        cartoon.setAttribute("aria-pressed", included ? "true" : "false");
-        cartoon.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
-        render();
-      });
-    }
+  // Categorías de un vídeo (live action se deduce: todo lo que no es cartoon)
+  const catsOf = (v) => ["realism", "ads", "cartoon", "scifiFantasy"].filter((k) => (k === "realism" ? !v.cartoon : v[k]));
 
-    const realism = document.getElementById("realismToggle");
-    if (realism) {
-      realism.addEventListener("click", () => {
-        state.hideRealism = !state.hideRealism;
-        const included = !state.hideRealism;
-        realism.setAttribute("aria-pressed", included ? "true" : "false");
-        realism.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
-        render();
-      });
-    }
-
-    const ads = document.getElementById("adsToggle");
-    if (ads) {
-      ads.addEventListener("click", () => {
-        state.hideAds = !state.hideAds;
-        const included = !state.hideAds;
-        ads.setAttribute("aria-pressed", included ? "true" : "false");
-        ads.querySelector(".filter-toggle__state").textContent = included ? "IN" : "OUT";
-        render();
-      });
-    }
+  // Reglas: OUT siempre oculta. Si hay algún ONLY, el vídeo tiene que tener
+  // al menos una de las categorías en ONLY (el resto de IN no cuenta).
+  function passesGenre(cats) {
+    const M = state.mode;
+    if (cats.some((k) => M[k] === "out")) return false;
+    const onlys = Object.keys(M).filter((k) => M[k] === "only");
+    return !onlys.length || cats.some((k) => M[k] === "only");
   }
 
   function matches(v) {
     // Cada vídeo tiene una o varias categorías (realism/cartoon, sci-fi, ads).
-    const flags = [];
-    if (v.scifiFantasy) flags.push(!state.hideScifi);
-    if (v.cartoon) flags.push(!state.hideCartoon);
-    if (v.ads) flags.push(!state.hideAds);
-    if (!v.cartoon) flags.push(!state.hideRealism);
-    // Si CUALQUIERA de sus categorías está OUT, el vídeo se oculta (OUT manda)
-    if (flags.length && !flags.every(Boolean)) return false;
+    if (!passesGenre(catsOf(v))) return false;
     // Categorías: el vídeo debe tener TODAS las categorías activas
     for (const c of state.activeCats) {
       if (!(v.categories || []).includes(c)) return false;
@@ -193,10 +168,9 @@
     const svg = document.getElementById("pie");
     if (!svg) return;
     const NAMES = { realism: "Live action", scifiFantasy: "Sci-fi / Fantasy", cartoon: "Cartoon", ads: "Ads" };
-    const HIDE = { realism: "hideRealism", scifiFantasy: "hideScifi", cartoon: "hideCartoon", ads: "hideAds" };
     const groups = new Map();
     state.videos.forEach((v) => {
-      const f = ["realism", "ads", "cartoon", "scifiFantasy"].filter((k) => (k === "realism" ? !v.cartoon : v[k]));
+      const f = catsOf(v);
       const key = f.join("+");
       if (!groups.has(key)) groups.set(key, { flags: f, n: 0 });
       groups.get(key).n++;
@@ -209,7 +183,7 @@
     const N = state.videos.length, R = 20, C = 22;
     let ang = -Math.PI / 2, html = `<circle cx="${C}" cy="${C}" r="${R}" class="pie__ring"/>`;
     list.forEach(([key, g]) => {
-      const on = g.flags.every((k) => !state[HIDE[k]]);
+      const on = passesGenre(g.flags);
       const a2 = ang + (g.n / N) * Math.PI * 2;
       const x1 = C + R * Math.cos(ang), y1 = C + R * Math.sin(ang);
       const x2 = C + R * Math.cos(a2), y2 = C + R * Math.sin(a2);
@@ -256,8 +230,9 @@
 
     els.grid.innerHTML = "";
 
-    const allIn = !state.hideScifi && !state.hideCartoon && !state.hideAds && !state.hideRealism;
-    const allOut = state.hideScifi && state.hideCartoon && state.hideAds && state.hideRealism;
+    const modes = Object.values(state.mode);
+    const allIn = modes.every((m) => m === "in");
+    const allOut = modes.every((m) => m === "out");
     const allEl = document.getElementById("genreAll");
     if (allEl) allEl.hidden = !allIn;
 

@@ -673,3 +673,6 @@ body {
 
 /* Etiquetas de tipo (live action / cartoon / ad / sci-fi) */
 .tag--type { color: var(--accent); border-color: var(--accent); }
+
+/* ONLY = blanco: solo se ve esa categoría */
+.filter-toggle[data-mode="only"] { background: #ffffff; border-color: #ffffff; color: #0a0a0a; }
