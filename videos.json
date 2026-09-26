@@ -18,6 +18,60 @@
   ],
   "videos": [
     {
+      "id": "the-failure-terrada",
+      "youtubeId": "6XlUJni_4Zo",
+      "cartoon": true,
+      "title": "THE FAILURE",
+      "director": "Jesús Terrada Gómez",
+      "tool": "",
+      "date": "2026-09-25",
+      "categories": [
+        "Aesthetics / Art",
+        "Character consistency",
+        "Narrative",
+        "Lipsync"
+      ],
+      "highlight": "Claymation look",
+      "description": "Short claymation-style AI film by Jesús Terrada: a plasticine character with antennae, a suitcase and a puffer jacket sets off among the crowd. 'I say you should go your own way.'",
+      "source": "https://www.youtube.com/watch?v=6XlUJni_4Zo"
+    },
+    {
+      "id": "reviver-dor-brothers",
+      "youtubeId": "yrECV9FdFk4",
+      "title": "REVIVER — Trailer",
+      "director": "The Dor Brothers (created by Aleksey)",
+      "tool": "",
+      "date": "2026-08-26",
+      "categories": [
+        "Photorealism",
+        "Transitions",
+        "Aesthetics / Art",
+        "Camera movement"
+      ],
+      "highlight": "The Dor Brothers · new film coming soon",
+      "description": "Trailer for 'Reviver', the upcoming film from The Dor Brothers, created by Aleksey. Coming soon.",
+      "source": "https://www.youtube.com/watch?v=yrECV9FdFk4"
+    },
+    {
+      "id": "kita-wonder-jidenna",
+      "youtubeId": "7wrt3wp0CCk",
+      "cartoon": true,
+      "scifiFantasy": true,
+      "title": "KITA — Beyond the Loop S2",
+      "director": "Jidenna · Wonder Studios",
+      "tool": "",
+      "date": "2026-09-17",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Character consistency",
+        "Aesthetics / Art"
+      ],
+      "highlight": "Grammy-nominated Jidenna's debut as a filmmaker · stop-motion look",
+      "description": "An elderly, disabled Nigerian tech entrepreneur lives alone in a near-future city. When a malfunctioning delivery robot starts turning up at the same time every afternoon, he decides it must be choosing him. Fifth film of Wonder Studios' anthology Beyond the Loop S2. Jidenna designed the world, wrote, directed and scored it, with no coding background, to make the stop-motion film with Black characters that rarely gets greenlit.",
+      "source": "https://www.youtube.com/watch?v=7wrt3wp0CCk"
+    },
+    {
       "id": "la-triste-figura-contanimation",
       "youtubeId": "Ixj6Zu9bahU",
       "cartoon": true,
