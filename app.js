@@ -164,15 +164,14 @@
   }
 
   function matches(v) {
-    // Un vídeo con flags de género (sci-fi/cartoon/ads) se muestra si AL MENOS
-    // UNO de sus flags está IN. Así, con Cartoon IN se ve un cartoon aunque sea
-    // también sci-fi y sci-fi esté OUT (el criterio activo manda).
+    // Cada vídeo tiene una o varias categorías (realism/cartoon, sci-fi, ads).
     const flags = [];
     if (v.scifiFantasy) flags.push(!state.hideScifi);
     if (v.cartoon) flags.push(!state.hideCartoon);
     if (v.ads) flags.push(!state.hideAds);
     if (!v.cartoon) flags.push(!state.hideRealism);
-    if (flags.length && !flags.some(Boolean)) return false;
+    // Si CUALQUIERA de sus categorías está OUT, el vídeo se oculta (OUT manda)
+    if (flags.length && !flags.every(Boolean)) return false;
     // Categorías: el vídeo debe tener TODAS las categorías activas
     for (const c of state.activeCats) {
       if (!(v.categories || []).includes(c)) return false;
@@ -210,7 +209,7 @@
     const N = state.videos.length, R = 20, C = 22;
     let ang = -Math.PI / 2, html = `<circle cx="${C}" cy="${C}" r="${R}" class="pie__ring"/>`;
     list.forEach(([key, g]) => {
-      const on = !g.flags.length || g.flags.some((k) => !state[HIDE[k]]);
+      const on = g.flags.every((k) => !state[HIDE[k]]);
       const a2 = ang + (g.n / N) * Math.PI * 2;
       const x1 = C + R * Math.cos(ang), y1 = C + R * Math.sin(ang);
       const x2 = C + R * Math.cos(a2), y2 = C + R * Math.sin(a2);
