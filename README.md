@@ -2,7 +2,7 @@
 
 A living, curated feed of AI-made video references, ordered by date — latest on top. Static site: YouTube embeds only, no backend.
 
-Maintained by **Aleix Perdigó** · spotted a recent reference that belongs here? → aleix.perdigo@goroka.tv
+Maintained by **Aleix Perdigó** · spotted a recent reference that belongs here? → aleixperdigo@gmail.com
 
 ## Adding a video
 
