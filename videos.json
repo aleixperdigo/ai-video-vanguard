@@ -18,6 +18,25 @@
   ],
   "videos": [
     {
+      "id": "junkyard-king-ch3",
+      "youtubeId": "oa0UO-L07mw",
+      "cartoon": true,
+      "scifiFantasy": true,
+      "title": "Junkyard King — Chapter 3: \"The Other Side\"",
+      "director": "Henry Daubrez",
+      "tool": "",
+      "date": "2026-10-07",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Character consistency",
+        "Aesthetics / Art"
+      ],
+      "highlight": "Original animated series",
+      "description": "Chapter 3 of Henry Daubrez's animated series (produced by ODD KID): Artie, Kai and Socket cross the gate into Avalon, a strangely beautiful world of new creatures, clues and one very big fight.",
+      "source": "https://www.youtube.com/watch?v=oa0UO-L07mw"
+    },
+    {
       "id": "the-failure-terrada",
       "youtubeId": "6XlUJni_4Zo",
       "cartoon": true,
