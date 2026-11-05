@@ -18,6 +18,24 @@
   ],
   "videos": [
     {
+      "id": "goldfish-mayhem-wonder-junielau",
+      "youtubeId": "8R4hEVX46fA",
+      "scifiFantasy": true,
+      "title": "Goldfish Mayhem — Beyond the Loop S2",
+      "director": "Junie Lau · Wonder Studios",
+      "tool": "",
+      "date": "2026-11-05",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Photorealism",
+        "Aesthetics / Art"
+      ],
+      "highlight": "Season 2 finale · Cantonese cyberpunk action-comedy",
+      "description": "On a fictionalised street in southern China, BOBO, Fengshui Girl and Xixili try to rescue their foster mother, Auntie Fen, and uncover a data-immortality experiment run by the city's elite. Kung fu, absurdist humour and street mythology, inspired by Junie Lau's upbringing in Foshan and her love of Hong Kong cinema. Final film of Wonder Studios' anthology Beyond the Loop S2.",
+      "source": "https://www.youtube.com/watch?v=8R4hEVX46fA"
+    },
+    {
       "id": "junkyard-king-ch3",
       "youtubeId": "oa0UO-L07mw",
       "cartoon": true,
