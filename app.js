@@ -19,7 +19,7 @@
     // Modo por categoría: "in" | "out" | "only". Por defecto TODO IN.
     // realism = live action = todo lo que no es cartoon.
     mode: { scifiFantasy: "in", cartoon: "in", ads: "in", realism: "in" },
-    cols: 2, // referencias por fila (1 / 2 / 4)
+    cols: 4, // referencias por fila (1 / 2 / 4)
     filtered: [],
     rendered: 0,
   };
