@@ -1,4 +1,4 @@
-# AI Video Vanguard
+# AI Video Top
 
 A living, curated feed of AI-made video references, ordered by date — latest on top. Static site: YouTube embeds only, no backend.
 
