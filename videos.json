@@ -18,6 +18,76 @@
   ],
   "videos": [
     {
+      "id": "taru-crazytacoman",
+      "youtubeId": "rz_sShKmcyw",
+      "scifiFantasy": true,
+      "title": "TARU",
+      "director": "Crazy Taco Man",
+      "tool": "Dreamina",
+      "date": "2026-10-17",
+      "categories": [
+        "Worldbuilding",
+        "Narrative",
+        "VFX",
+        "Camera movement"
+      ],
+      "highlight": "Dialogue-free · Seedance 2.5 sword fights",
+      "description": "On a jungle planet where the rain never stops, mysterious orbs hold the key to an enigmatic gate. Martial arts, sword fights, strange creatures and bamboo forests, told without a word. Made mainly with Seedance 2.5 via Dreamina, plus Veo 3.1 and Nano Banana Pro.",
+      "source": "https://www.youtube.com/watch?v=rz_sShKmcyw"
+    },
+    {
+      "id": "nexus-ep7-dino-demolition",
+      "youtubeId": "-u63ZovsR7I",
+      "scifiFantasy": true,
+      "title": "Nexus Ep 7 — Dino Demolition Squad",
+      "director": "PJ Ace (dir. Chris Capel)",
+      "tool": "Dreamina",
+      "date": "2026-10-30",
+      "categories": [
+        "Worldbuilding",
+        "Narrative",
+        "VFX"
+      ],
+      "highlight": "Weekly episodes from the Nexus universe",
+      "description": "Thump rides a spitting dinosaur and fires exploding pustules off a living mortar named Brontenheimer. The empire hired him to win the war, but he keeps blowing up its own soldiers. Fantasy comedy episode while the Nexus feature is in the works.",
+      "source": "https://www.youtube.com/watch?v=-u63ZovsR7I"
+    },
+    {
+      "id": "otto-hasbroki",
+      "youtubeId": "KQ9BvfMwXYQ",
+      "scifiFantasy": true,
+      "title": "OTTO",
+      "director": "Hasbroki (dir. Luis Romero Rubio)",
+      "tool": "Higgsfield",
+      "date": "2026-09-14",
+      "categories": [
+        "Narrative",
+        "Character consistency",
+        "Photorealism"
+      ],
+      "highlight": "Higgsfield Global Film Festival 2026 · entry",
+      "description": "A household robot starts asking what it means to be human. A program called OtherLife promises him a real human life in simulation: childhood, first love, a family of his own.",
+      "source": "https://www.youtube.com/watch?v=KQ9BvfMwXYQ"
+    },
+    {
+      "id": "the-last-delivery-crepel",
+      "youtubeId": "HO-7AXBLZHo",
+      "scifiFantasy": true,
+      "title": "THE LAST DELIVERY",
+      "director": "Crepel Studio (dir. Alban Crepel)",
+      "tool": "Higgsfield",
+      "date": "2026-09-16",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Character consistency",
+        "Photorealism"
+      ],
+      "highlight": "Higgsfield Global Film Festival 2026 · dialogue-free",
+      "description": "A delivery robot keeps walking its route through a dead world, carrying a package for a recipient who died years ago. A starving dog starts following it. Blender plus AI image and video, hand-edited and sound-designed.",
+      "source": "https://www.youtube.com/watch?v=HO-7AXBLZHo"
+    },
+    {
       "id": "goldfish-mayhem-wonder-junielau",
       "youtubeId": "8R4hEVX46fA",
       "scifiFantasy": true,
