@@ -326,8 +326,10 @@
     const thumb = node.querySelector(".thumb");
     const img = node.querySelector(".thumb__img");
 
-    // maxres = 1280x720; not every video has it (404) → fall back to hq (480x360)
-    img.onerror = () => { img.onerror = null; img.src = `https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`; };
+    // maxres = 1280x720; when missing YouTube serves a 120x90 grey placeholder → fall back to hq (480x360)
+    const fallback = () => { img.onerror = img.onload = null; img.src = `https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`; };
+    img.onerror = fallback;
+    img.onload = () => { if (img.naturalWidth <= 120) fallback(); };
     img.src = `https://i.ytimg.com/vi/${v.youtubeId}/maxresdefault.jpg`;
     img.alt = v.title || "";
     thumb.setAttribute("aria-label", `Play: ${v.title || ""}`);
