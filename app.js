@@ -326,7 +326,9 @@
     const thumb = node.querySelector(".thumb");
     const img = node.querySelector(".thumb__img");
 
-    img.src = `https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`;
+    // maxres = 1280x720; not every video has it (404) → fall back to hq (480x360)
+    img.onerror = () => { img.onerror = null; img.src = `https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`; };
+    img.src = `https://i.ytimg.com/vi/${v.youtubeId}/maxresdefault.jpg`;
     img.alt = v.title || "";
     thumb.setAttribute("aria-label", `Play: ${v.title || ""}`);
     thumb.addEventListener("click", () => playInline(thumb, v.youtubeId));
