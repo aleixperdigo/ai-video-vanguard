@@ -6,7 +6,7 @@
   <title>AI Video Top</title>
   <link rel="preconnect" href="https://i.ytimg.com" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" />
-  <link rel="stylesheet" href="styles.css?v=202611061900" />
+  <link rel="stylesheet" href="styles.css?v=202611071200" />
 </head>
 <body>
   <header class="masthead">
@@ -34,6 +34,11 @@
   </header>
 
   <nav class="controls" aria-label="Filters">
+    <div class="ctl-right">
+    <div class="view-seg sort-seg" id="sortSeg" role="group" aria-label="Order">
+      <button class="view-seg__btn" data-sort="date" type="button" aria-pressed="true">Latest</button>
+      <button class="view-seg__btn" data-sort="views" type="button" aria-pressed="false">Most viewed</button>
+    </div>
     <div class="view-seg" id="viewSeg" role="group" aria-label="References per row">
       <button class="view-seg__btn" data-cols="1" type="button" aria-pressed="false" title="1 per row" aria-label="1 per row">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
@@ -54,6 +59,7 @@
           <rect x="17.1" y="4" width="3.3" height="16" rx="1" />
         </svg>
       </button>
+    </div>
     </div>
     <div class="genre-row">
       <button class="filter-toggle filter-toggle--glint" id="genreToggle" type="button" aria-pressed="true">
@@ -84,6 +90,7 @@
       <button class="thumb" type="button" aria-label="Play video">
         <img class="thumb__img" loading="lazy" alt="" />
         <span class="thumb__date" aria-hidden="true"></span>
+        <span class="thumb__views" hidden></span>
         <span class="thumb__play" aria-hidden="true">▶</span>
       </button>
       <div class="card__body">
@@ -100,7 +107,7 @@
 
   <a class="contact" href="mailto:aleixperdigo@gmail.com">aleixperdigo@gmail.com</a>
 
-  <script src="app.js?v=202611061900"></script>
+  <script src="app.js?v=202611071200"></script>
 
   <!-- GoatCounter — cookieless analytics, wired to the "goroka" account name. -->
   <script

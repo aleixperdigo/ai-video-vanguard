@@ -14,7 +14,7 @@
     activeCats: new Set(),
     activeTools: new Set(),
     query: "",
-    sortMode: "date", // "date" | "likes"
+    sortMode: "date", // "date" | "views" | "likes"
     sortDir: "desc", // desc = más nuevo primero (lo último, arriba)
     // Modo por categoría: "in" | "out" | "only". Por defecto TODO IN.
     // realism = live action = todo lo que no es cartoon.
@@ -51,6 +51,8 @@
 
       if (data.meta?.title) els.title.textContent = data.meta.title;
       if (data.meta?.subtitle) els.subtitle.textContent = data.meta.subtitle;
+      state.subtitle = els.subtitle.textContent;
+      state.viewsUpdated = data.meta?.viewsUpdated;
     } catch (err) {
       els.grid.innerHTML = `<div class="empty">Could not load videos.json — ${escapeHtml(
         err.message
@@ -100,8 +102,22 @@
         render();
       });
     }
-    // Orden: SIEMPRE por fecha, lo más nuevo arriba (regla fija). Sin botón.
-    // (El orden por likes queda latente; ver LIKES_ENABLED.)
+    // Orden: por fecha (lo más nuevo arriba) o por visitas de YouTube
+    const sortSeg = document.getElementById("sortSeg");
+    if (sortSeg) {
+      sortSeg.addEventListener("click", (e) => {
+        const btn = e.target.closest(".view-seg__btn");
+        if (!btn) return;
+        state.sortMode = btn.dataset.sort;
+        sortSeg
+          .querySelectorAll(".view-seg__btn")
+          .forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
+        els.subtitle.textContent = state.sortMode === "views"
+          ? `Most viewed on YouTube · counts as of ${fmtDate(state.viewsUpdated)}`
+          : state.subtitle;
+        render();
+      });
+    }
 
     const seg = document.getElementById("viewSeg");
     if (seg) {
@@ -232,6 +248,7 @@
     list = list.filter((v) => !v.pinBottom);
 
     list.sort((a, b) => {
+      if (state.sortMode === "views") return (b.views || 0) - (a.views || 0) || byDate(a, b, "desc");
       if (state.sortMode === "likes") {
         const diff = getLikes(b.id) - getLikes(a.id); // más likes primero
         if (diff !== 0) return diff;
@@ -266,8 +283,8 @@
 
     const colsClass = "grid--cols" + state.cols;
 
-    // En orden por LIKES no hay secciones por año (el tiempo queda en 2º término)
-    if (state.sortMode === "likes") {
+    // En orden por VISITAS o LIKES no hay secciones por año (el tiempo queda en 2º término)
+    if (state.sortMode !== "date") {
       const grid = document.createElement("div");
       grid.className = "year-grid " + colsClass;
       list.concat(pinned).forEach((v) => grid.appendChild(card(v)));
@@ -341,6 +358,13 @@
     } else {
       dateBadge.textContent = "NO DATE";
       dateBadge.classList.add("thumb__date--empty");
+    }
+
+    if (v.views) {
+      const vb = node.querySelector(".thumb__views");
+      vb.textContent = fmtViews(v.views) + " views";
+      vb.title = `${v.views.toLocaleString("en-US")} YouTube views`;
+      vb.hidden = false;
     }
 
     node.querySelector(".card__title").textContent = v.title || "Untitled";
@@ -469,6 +493,13 @@
       localStorage.setItem(LIKES_KEY, JSON.stringify(map));
     } catch (e) {}
     return map[id];
+  }
+
+  // 1448039 → "1.4M", 727431 → "727K", 3510 → "3.5K"
+  function fmtViews(n) {
+    if (n >= 1e6) return (n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M";
+    if (n >= 1e3) return (n / 1e3).toFixed(n >= 1e5 ? 0 : 1).replace(/\.0$/, "") + "K";
+    return String(n);
   }
 
   function fmtDate(iso) {
