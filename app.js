@@ -381,7 +381,6 @@
 
     node.querySelector(".card__title").textContent = v.title || "Untitled";
     node.querySelector(".card__dir").textContent = v.director || "—";
-    node.querySelector(".card__date").textContent = fmtDate(v.date);
 
     const body = node.querySelector(".card__body");
 

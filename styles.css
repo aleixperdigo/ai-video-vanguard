@@ -473,13 +473,6 @@ body {
   letter-spacing: 0.03em;
 }
 .card__dir { font-weight: 700; color: var(--ink); }
-.card__date {
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-  color: var(--accent);
-  font-weight: 800;
-  font-size: 200%; /* el doble que el resto de la meta */
-}
 
 .card__highlight {
   justify-self: start;
