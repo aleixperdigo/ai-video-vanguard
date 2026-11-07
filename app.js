@@ -113,10 +113,22 @@
           .querySelectorAll(".view-seg__btn")
           .forEach((b) => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
         els.subtitle.textContent = state.sortMode === "views"
-          ? `Most viewed on YouTube · counts as of ${fmtDate(state.viewsUpdated)}`
+          ? `Top views on YouTube · counts as of ${fmtDate(state.viewsUpdated)}`
           : state.subtitle;
         render();
       });
+    }
+
+    // Móvil: la barra de filtros se esconde al bajar y vuelve al subir
+    const controls = document.querySelector(".controls");
+    if (controls) {
+      let lastY = window.scrollY;
+      window.addEventListener("scroll", () => {
+        const y = window.scrollY;
+        const hide = window.innerWidth <= 520 && y > lastY && y > 400; // ponytail: umbral fijo (offsetTop de un sticky sigue al scroll)
+        if (Math.abs(y - lastY) > 4) controls.classList.toggle("controls--hidden", hide);
+        lastY = y;
+      }, { passive: true });
     }
 
     const seg = document.getElementById("viewSeg");

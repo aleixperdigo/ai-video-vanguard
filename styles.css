@@ -701,7 +701,7 @@ body {
 }
 @media (prefers-reduced-motion: reduce) { .pie.is-pulse, .count.is-pulse { animation: none; } }
 
-/* Orden (Latest / Most viewed) + visitas de YouTube en la miniatura */
+/* Orden (Latest / Top views) + visitas de YouTube en la miniatura */
 .ctl-right { display: flex; align-items: center; gap: 10px; }
 .sort-seg .view-seg__btn {
   font: inherit; font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
@@ -714,3 +714,11 @@ body {
 }
 @media (max-width: 520px) { .ctl-right { width: 100%; justify-content: flex-end; } }
 @media (max-width: 520px) { .view-seg.sort-seg { display: inline-flex; } }
+
+/* Móvil: barra que se esconde al bajar; email al final, no fijo */
+.controls { transition: transform .25s ease; }
+.controls.controls--hidden { transform: translateY(-100%); }
+@media (max-width: 520px) {
+  .contact { position: static; display: block; width: fit-content; margin: 24px var(--pad) 32px; }
+}
+@media (prefers-reduced-motion: reduce) { .controls { transition: none; } }

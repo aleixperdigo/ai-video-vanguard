@@ -433,7 +433,7 @@
       "scifiFantasy": false,
       "title": "A Face Only A Mother Could Love",
       "director": "Robert Gaudette",
-      "tool": "",
+      "tool": "Runway",
       "date": "2026-04-23",
       "categories": [
         "Narrative",
@@ -561,8 +561,8 @@
       "categories": [
         "Narrative"
       ],
-      "highlight": "",
-      "description": "Short film by Jordan Daniel Chesney (JDC Entertainment), a generative-AI film studio. Tool and categories unconfirmed.",
+      "highlight": "Produced by CapCut",
+      "description": "Short film by Jordan Daniel Chesney (JDC Entertainment), a generative-AI film studio. Produced by CapCut, music by Brendon Moeller.",
       "source": "https://www.youtube.com/watch?v=iapXQ-Y36sI",
       "views": 1390
     },
@@ -687,13 +687,15 @@
       "youtubeId": "DXTv_l056x8",
       "title": "Dōkyō",
       "director": "László Gaál",
-      "tool": "",
+      "tool": "Dreamina",
       "date": "2026-06-18",
       "categories": [
+        "Camera movement",
+        "Temporal coherence",
         "Aesthetics / Art"
       ],
-      "highlight": "",
-      "description": "Piece by László Gaál (colour grading + generative AI). Tool and categories unconfirmed.",
+      "highlight": "3-minute single take · Seedance 2.0",
+      "description": "A three-minute continuous take built step by step with Seedance 2.0 Omni mode, instead of stitching last frame to first frame. Graded soft and grainy like expired 8mm or 16mm film.",
       "source": "https://www.youtube.com/watch?v=DXTv_l056x8",
       "views": 363
     },
@@ -839,7 +841,7 @@
       "youtubeId": "XQr4Xklqzw8",
       "title": "AI Will Smith eating spaghetti",
       "director": "Roy Cassette",
-      "tool": "",
+      "tool": "Stable Diffusion",
       "date": "2023-04-01",
       "categories": [],
       "pinBottom": true,
@@ -853,7 +855,7 @@
       "youtubeId": "IfScba6NElY",
       "title": "Children of a Dead Star — Trailer",
       "director": "Particle Panic",
-      "tool": "",
+      "tool": "Runway",
       "date": "2026-05-27",
       "categories": [
         "Photorealism",
@@ -966,7 +968,7 @@
       "youtubeId": "7RogQiih3M8",
       "title": "World Cup 2026 — The AI Football Movie",
       "director": "The Blue Horizon AI",
-      "tool": "",
+      "tool": "Higgsfield",
       "date": "2026-06-17",
       "categories": [
         "Photorealism",
@@ -984,7 +986,7 @@
       "scifiFantasy": true,
       "title": "KOI Games — AI Cinematic Film",
       "director": "The Blue Horizon AI",
-      "tool": "",
+      "tool": "Higgsfield",
       "date": "2026-04-03",
       "categories": [
         "Photorealism",
