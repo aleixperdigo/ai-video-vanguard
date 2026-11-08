@@ -715,3 +715,19 @@ body {
   .contact { position: static; display: block; width: fit-content; margin: 24px var(--pad) 32px; }
 }
 @media (prefers-reduced-motion: reduce) { .controls { transition: none; } }
+
+/* Logo que se genera (logo-fx.js): firma tipo "seed" de modelo de difusión */
+.logo-seed {
+  display: block; margin: 8px 0 -4px;
+  font: 500 11px/1 ui-monospace, "SF Mono", Menlo, monospace;
+  letter-spacing: 0.02em; color: var(--dim); text-transform: lowercase;
+  font-variant-numeric: tabular-nums; pointer-events: none;
+}
+
+.masthead__row { align-items: center; }
+.theme-switch {
+  margin-left: auto; background: transparent; color: var(--dim);
+  border: 1.5px solid var(--line); padding: 6px 10px; cursor: pointer;
+  font: 700 11px/1 ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 0.04em; text-transform: uppercase;
+}
+.theme-switch:hover { color: var(--accent); border-color: var(--accent); }
