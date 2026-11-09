@@ -13,6 +13,10 @@ body{font-family:'JetBrains Mono',monospace;font-weight:400;letter-spacing:0}
 .card__highlight{border:0;background:var(--ink);color:var(--bg);padding:3px 6px;font-weight:700;letter-spacing:0}
 .card__tool{background:var(--accent);color:#fff}
 .thumb__date{background:var(--accent);color:#fff;border:0;animation:none!important}
+/* fecha que respira: reflejo irisado en la gama del naranja, lento */
+.thumb__date:not(.thumb__date--empty){background:linear-gradient(110deg,#ff4f00 0 36%,#ff6f12 41%,#ff9a3c 46%,#ff7058 51%,#ff3346 55%,#ff4f00 62% 100%);background-size:320% 100%;animation:date-iris 9s cubic-bezier(.45,0,.25,1) infinite!important}
+@keyframes date-iris{0%,8%{background-position:100% 0}55%,100%{background-position:0 0}}
+@media (prefers-reduced-motion:reduce){.thumb__date:not(.thumb__date--empty){animation:none!important;background:var(--accent)}}
 .thumb__views{background:var(--ink);color:var(--bg);border:0}
 .thumb__play{filter:grayscale(1)}
 .filter-toggle,.chip,.view-seg__btn,.about__btn,.contact{font-family:'JetBrains Mono',monospace;letter-spacing:0;border-color:var(--ink)!important}
