@@ -42,11 +42,11 @@
     tick();
   }
 
-  // Selector de tema: Archive (por defecto) / Classic (negro original con azul)
+  // Selector de tema: Paper (por defecto: negro + naranja) / Dark (negro original con azul)
   const root = document.documentElement, sw = document.getElementById("themeSwitch");
   const sheet = document.getElementById("themeArchivo");
   if (sw && sheet) {
-    const label = () => (sw.textContent = sheet.disabled ? "Archive" : "Classic");
+    const label = () => (sw.textContent = sheet.disabled ? "Paper" : "Dark");
     label();
     sw.addEventListener("click", () => {
       sheet.disabled = !sheet.disabled;
