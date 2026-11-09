@@ -43,13 +43,13 @@
   }
 
   // Selector de tema: Dark (por defecto) / Paper (archivo)
-  const sheet = document.getElementById("themePaper"), sw = document.getElementById("themeSwitch");
-  if (sheet && sw) {
-    const label = () => (sw.textContent = sheet.disabled ? "Paper" : "Dark");
+  const root = document.documentElement, sw = document.getElementById("themeSwitch");
+  if (sw) {
+    const label = () => (sw.textContent = root.classList.contains("paper") ? "Dark" : "Paper");
     label();
     sw.addEventListener("click", () => {
-      sheet.disabled = !sheet.disabled;
-      try { localStorage.setItem("theme", sheet.disabled ? "dark" : "paper"); } catch (e) {}
+      const paper = root.classList.toggle("paper");
+      try { localStorage.setItem("theme", paper ? "paper" : "dark"); } catch (e) {}
       label();
       generate();
     });
