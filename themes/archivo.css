@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,900&family=JetBrains+Mono:wght@400;700&display=swap');
 :root{--bg:#0d0c0b;--panel:#0d0c0b;--ink:#ece6da;--dim:#8a857c;--line:#ece6da;--accent:#ff4f00;--accent-ink:#fff;--accent2:#ece6da;--era1:#171513;--era2:#201d1a}
-html.paper{--bg:#e9e7e1;--panel:#e9e7e1;--ink:#111;--dim:#6b6a66;--line:#111;--accent2:#111;--era1:#dcd9d1;--era2:#dcd9d1}
 body{background:var(--bg);color:var(--ink)}
 body{font-family:'JetBrains Mono',monospace;font-weight:400;letter-spacing:0}
-.logo,.year-head,.card__title{font-family:'Archivo',sans-serif;font-stretch:62%;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em}
+.logo,.year-head,.card__title,.bar-title{font-family:'Archivo',sans-serif;font-stretch:62%;font-weight:900;text-transform:uppercase;letter-spacing:-0.01em}
 .logo{font-size:clamp(48px,12vw,180px);line-height:.8}
 .card__title{font-size:26px;line-height:.95}
 .year-sect--y2025{background:var(--era1)!important}.year-sect--old{background:var(--era2)!important}

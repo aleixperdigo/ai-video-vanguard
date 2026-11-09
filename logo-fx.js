@@ -42,17 +42,25 @@
     tick();
   }
 
-  // Selector de tema: Dark (por defecto) / Paper (archivo)
+  // Selector de tema: Archive (por defecto) / Classic (negro original con azul)
   const root = document.documentElement, sw = document.getElementById("themeSwitch");
-  if (sw) {
-    const label = () => (sw.textContent = root.classList.contains("paper") ? "Dark" : "Paper");
+  const sheet = document.getElementById("themeArchivo");
+  if (sw && sheet) {
+    const label = () => (sw.textContent = sheet.disabled ? "Archive" : "Classic");
     label();
     sw.addEventListener("click", () => {
-      const paper = root.classList.toggle("paper");
-      try { localStorage.setItem("theme", paper ? "paper" : "dark"); } catch (e) {}
+      sheet.disabled = !sheet.disabled;
+      root.classList.toggle("classic", sheet.disabled);
+      try { localStorage.setItem("theme", sheet.disabled ? "classic" : "archive"); } catch (e) {}
       label();
       generate();
     });
+  }
+
+  // Al salir la cabecera de pantalla, el título entra en la barra de controles
+  const bar = document.querySelector(".controls"), head = document.querySelector(".masthead");
+  if (bar && head && "IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => bar.classList.toggle("controls--titled", !e.isIntersecting)).observe(head);
   }
 
   newSeed(); idle();

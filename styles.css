@@ -94,9 +94,9 @@ body {
   flex: none;
 }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(232, 255, 69, 0.6); }
-  70% { box-shadow: 0 0 0 7px rgba(232, 255, 69, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(232, 255, 69, 0); }
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); }
+  70% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--accent) 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
 }
 @media (prefers-reduced-motion: reduce) {
   .feednote__pulse { animation: none; }
@@ -542,8 +542,8 @@ body {
   animation: date-pulse 2.6s ease-in-out infinite;
 }
 @keyframes date-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 255, 69, 0); }
-  50% { box-shadow: 0 0 11px 1px rgba(232, 255, 69, 0.6); }
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
+  50% { box-shadow: 0 0 11px 1px color-mix(in srgb, var(--accent) 60%, transparent); }
 }
 @media (prefers-reduced-motion: reduce) {
   .thumb__date:not(.thumb__date--empty) { animation: none; }
@@ -679,16 +679,16 @@ body {
 .pie.is-pulse { animation: pie-pulse .9s cubic-bezier(.2,.8,.2,1); }
 .count.is-pulse { display: inline-block; animation: count-pulse .9s cubic-bezier(.2,.8,.2,1); }
 @keyframes pie-pulse {
-  0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(232,255,69,0)); }
-  22% { transform: scale(1.16); filter: drop-shadow(0 0 8px rgba(232,255,69,.75)); }
-  45% { transform: scale(.97); filter: drop-shadow(0 0 2px rgba(232,255,69,.3)); }
-  65% { transform: scale(1.06); filter: drop-shadow(0 0 5px rgba(232,255,69,.45)); }
-  100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(232,255,69,0)); }
+  0% { transform: scale(1); filter: drop-shadow(0 0 0 color-mix(in srgb, var(--accent) 0%, transparent)); }
+  22% { transform: scale(1.16); filter: drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 75%, transparent)); }
+  45% { transform: scale(.97); filter: drop-shadow(0 0 2px color-mix(in srgb, var(--accent) 30%, transparent)); }
+  65% { transform: scale(1.06); filter: drop-shadow(0 0 5px color-mix(in srgb, var(--accent) 45%, transparent)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0 color-mix(in srgb, var(--accent) 0%, transparent)); }
 }
 @keyframes count-pulse {
   0% { transform: translateY(0); color: var(--accent); text-shadow: none; }
-  22% { transform: translateY(-3px) scale(1.1); color: #fff; text-shadow: 0 0 10px rgba(232,255,69,.8), -4px 0 0 rgba(232,255,69,.35); }
-  45% { transform: translateY(0) scale(.98); color: var(--accent); text-shadow: -2px 0 0 rgba(232,255,69,.25); }
+  22% { transform: translateY(-3px) scale(1.1); color: #fff; text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 80%, transparent), -4px 0 0 color-mix(in srgb, var(--accent) 35%, transparent); }
+  45% { transform: translateY(0) scale(.98); color: var(--accent); text-shadow: -2px 0 0 color-mix(in srgb, var(--accent) 25%, transparent); }
   65% { transform: translateY(-1px) scale(1.03); }
   100% { transform: none; color: var(--accent); text-shadow: none; }
 }
@@ -731,3 +731,17 @@ body {
   font: 700 11px/1 ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 0.04em; text-transform: uppercase;
 }
 .theme-switch:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Tema CLASSIC: la versión negra original, con azul en vez de lima */
+html.classic { --accent: #3d5afe; --accent-ink: #fff; --accent2: #8c9dff; }
+
+/* Título que entra en la barra de controles al hacer scroll */
+.bar-title {
+  display: none; order: 99; margin-right: auto; /* .controls es row-reverse: order alto = a la izquierda */
+  font-size: clamp(18px, 2.2vw, 26px); font-weight: 800; letter-spacing: -0.04em;
+  line-height: 1; text-transform: uppercase; white-space: nowrap; color: var(--ink);
+}
+.controls--titled .bar-title { display: block; animation: bar-title-in .35s cubic-bezier(.2,.8,.2,1); }
+@keyframes bar-title-in { from { opacity: 0; transform: translateY(-60%); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .controls--titled .bar-title { animation: none; } }
+@media (max-width: 520px) { .bar-title { order: -1; width: 100%; } }
