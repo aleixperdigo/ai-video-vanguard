@@ -1441,6 +1441,77 @@
       "description": "The American Revolution told week by week, each episode released on the 250th anniversary of the day it depicts, with human voice actors. The most high-profile AI series so far, and one of the most criticised: worth watching to judge for yourself.",
       "source": "https://www.youtube.com/watch?v=E4cLKIxt8W8",
       "views": 269534
+    },
+    {
+      "id": "kelly-boesch-born-to-start-again",
+      "youtubeId": "99769qTbOU4",
+      "scifiFantasy": false,
+      "title": "Kelly Boesch — Born To Start Again (Music Video)",
+      "director": "Kelly Boesch",
+      "tool": "Midjourney · Veo 3",
+      "date": "2026-02-18",
+      "categories": [
+        "Aesthetics / Art",
+        "Photorealism"
+      ],
+      "highlight": "Music video · song, lyrics and visuals by one artist",
+      "description": "Explorers in fantastic clothes walk through harsh landscapes as if they belonged there, with animals as company. Look built from a Midjourney style reference and animated with Veo 3. Kelly Boesch writes the lyrics too.",
+      "source": "https://www.youtube.com/watch?v=99769qTbOU4",
+      "views": 512534
+    },
+    {
+      "id": "luna-new-born-kling",
+      "youtubeId": "NDCjrBg7w2E",
+      "scifiFantasy": false,
+      "title": "LUNA — New Born (Music Video)",
+      "director": "Outliers × Kling AI",
+      "tool": "Kling",
+      "date": "2025-09-19",
+      "categories": [
+        "Character consistency",
+        "Aesthetics / Art",
+        "Lipsync"
+      ],
+      "highlight": "Music video · debut single of an AI virtual artist",
+      "description": "Debut single of LUNA, a virtual artist made with AI. The idea comes from a small everyday moment, waiting for the subway after work. Produced by Outliers for Kling's creative partner programme.",
+      "source": "https://www.youtube.com/watch?v=NDCjrBg7w2E",
+      "views": 28681
+    },
+    {
+      "id": "paper-phone-qingming",
+      "youtubeId": "Ye_Ra_o5RUU",
+      "scifiFantasy": false,
+      "title": "Paper Phone (纸手机)",
+      "director": "Richin",
+      "tool": "",
+      "date": "2026-03-25",
+      "categories": [
+        "Narrative",
+        "Photorealism",
+        "Character consistency"
+      ],
+      "highlight": "Qingming Festival 2026 · viral in China",
+      "description": "A boy who doesn't understand what dying means saves 15 yuan to buy a paper phone, to burn as an offering for the grandmother who raised him. The shopkeeper brushes him off, then learns why and runs after him. A small, emotional piece that went viral in China during Qingming.",
+      "source": "https://www.youtube.com/watch?v=Ye_Ra_o5RUU",
+      "views": 8355
+    },
+    {
+      "id": "jia-zhangke-wheat-harvest",
+      "youtubeId": "7vJfyDgPc7o",
+      "scifiFantasy": false,
+      "title": "Wheat Harvest",
+      "director": "Jia Zhang-ke × Kling AI",
+      "tool": "Kling",
+      "date": "2024-12-10",
+      "categories": [
+        "Narrative",
+        "Photorealism",
+        "Worldbuilding"
+      ],
+      "highlight": "First AI short by an auteur director",
+      "description": "Jia Zhang-ke, one of China's leading auteurs, makes his first AI short: a story rooted in Shanxi culture, with characters in period dress holding today's phones. An early sign of established filmmakers taking AI seriously.",
+      "source": "https://www.youtube.com/watch?v=7vJfyDgPc7o",
+      "views": 7854
     }
   ]
 }
