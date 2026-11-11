@@ -1343,6 +1343,104 @@
       "description": "Chumbo sells Chumbo Drops door to door in a surreal desert neighborhood where everyone would rather live in their dreams than face reality. Dialogue-free, issue 02 of the Contanimation TV anthology.",
       "source": "https://www.youtube.com/watch?v=PCi7AuMpAw8",
       "views": 14204
+    },
+    {
+      "id": "svedka-shake-your-bots-off",
+      "youtubeId": "pkeWRI2yJGM",
+      "ads": true,
+      "scifiFantasy": false,
+      "title": "SVEDKA — Shake Your Bots Off (Super Bowl 2026)",
+      "director": "SVEDKA",
+      "tool": "",
+      "date": "2026-02-03",
+      "categories": [
+        "Viral",
+        "Character consistency",
+        "Aesthetics / Art"
+      ],
+      "highlight": "Super Bowl LX · national spot made largely with AI",
+      "description": "The SVEDKA robot comes back online after 12 years in sleep mode and drags the dance floor away from the phone. One of the first mostly AI-generated ads aired during the Super Bowl, which made it a reference point for brands testing AI on the biggest stage.",
+      "source": "https://www.youtube.com/watch?v=pkeWRI2yJGM",
+      "views": 288893
+    },
+    {
+      "id": "candy-didi-ok",
+      "youtubeId": "fB_wr-FheSk",
+      "scifiFantasy": true,
+      "title": "CANDY",
+      "director": "DiDi_OK",
+      "tool": "Seedance 2.5",
+      "date": "2026-09-10",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Photorealism",
+        "VFX"
+      ],
+      "highlight": "Chinese studio · violence turns people into candy",
+      "description": "The day humanity finishes a space solar array, Saturn's moon Pan disappears and people start turning into candy. Scientists chase the pattern and end up facing a bigger question: are we ready to be an advanced civilization?",
+      "source": "https://www.youtube.com/watch?v=fB_wr-FheSk",
+      "views": 406073
+    },
+    {
+      "id": "arrow-didi-ok",
+      "youtubeId": "Y0wwpPWNjls",
+      "scifiFantasy": true,
+      "title": "ARROW",
+      "director": "DiDi_OK",
+      "tool": "",
+      "date": "2025-12-09",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Photorealism"
+      ],
+      "highlight": "Finalist · Artefact AI Film Festival",
+      "description": "A giant mouse cursor appears in the sky and the world changes overnight. Several intertwined stories follow how people react when reality looks like a simulation someone else is operating.",
+      "source": "https://www.youtube.com/watch?v=Y0wwpPWNjls",
+      "views": 537740
+    },
+    {
+      "id": "jetty-tsunami",
+      "youtubeId": "TBvErYkNSiw",
+      "scifiFantasy": false,
+      "title": "Jetty Tsunami",
+      "director": "AI Video School",
+      "tool": "Seedance 2.0 · Kling · Veo",
+      "date": "2026-04-22",
+      "categories": [
+        "Narrative",
+        "VFX",
+        "Photorealism"
+      ],
+      "highlight": "Disaster short with a full making-of tutorial",
+      "description": "A birthday fishing trip on a jetty, in memory of a lost father, turns into a fight for survival when an earthquake triggers a tsunami. Made with Kling, Veo, Seedance 2.0, Nano Banana, Suno and ElevenLabs, and the creator explains the whole workflow in a separate video.",
+      "source": "https://www.youtube.com/watch?v=TBvErYkNSiw",
+      "links": [
+        {
+          "label": "Making-of tutorial",
+          "url": "https://www.youtube.com/watch?v=F5iVLP8kw44"
+        }
+      ],
+      "views": 103317
+    },
+    {
+      "id": "on-this-day-1776-trailer",
+      "youtubeId": "E4cLKIxt8W8",
+      "scifiFantasy": false,
+      "title": "On This Day… 1776 — Trailer",
+      "director": "Primordial Soup (Darren Aronofsky) · TIME",
+      "tool": "Google DeepMind",
+      "date": "2026-01-29",
+      "categories": [
+        "Narrative",
+        "Photorealism",
+        "Character consistency"
+      ],
+      "highlight": "Aronofsky's AI studio × Google DeepMind · weekly series on TIME",
+      "description": "The American Revolution told week by week, each episode released on the 250th anniversary of the day it depicts, with human voice actors. The most high-profile AI series so far, and one of the most criticised: worth watching to judge for yourself.",
+      "source": "https://www.youtube.com/watch?v=E4cLKIxt8W8",
+      "views": 269534
     }
   ]
 }
