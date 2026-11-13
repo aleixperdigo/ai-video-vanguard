@@ -1512,6 +1512,23 @@
       "description": "Jia Zhang-ke, one of China's leading auteurs, makes his first AI short: a story rooted in Shanxi culture, with characters in period dress holding today's phones. An early sign of established filmmakers taking AI seriously.",
       "source": "https://www.youtube.com/watch?v=7vJfyDgPc7o",
       "views": 7854
+    },
+    {
+      "id": "zombie-scavenger",
+      "youtubeId": "8uWmKjq98E0",
+      "scifiFantasy": true,
+      "title": "ZOMBIE SCAVENGER",
+      "director": "MX-SHELL",
+      "date": "2026-05-10",
+      "categories": [
+        "Narrative",
+        "Worldbuilding",
+        "Aesthetics / Art"
+      ],
+      "highlight": "Atomic-age retrofuture · 1969 California",
+      "description": "A cowboy robot rides an ostrich along the Atomic Coast of a retrofuturist 1969 California, all 50s pin-up dresses, chrome cars and space-age towers.",
+      "source": "https://www.youtube.com/watch?v=8uWmKjq98E0",
+      "views": 28243
     }
   ]
 }
